@@ -15,11 +15,15 @@
     <title>Rainist</title>
     <meta property="og:title" content="Rainist">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.home_url }}">
+    <meta property="og:url" content="{{ site.url }}">
     <meta property="og:site_name" content="Rainist">
     <meta property="og:description" content="레이니스트를 소개하며, 레이니스트 팀이 배운 교훈들을 공유하는 웹사이트입니다.">
     {% endif %}
-    <!-- <meta property="og:image" content="image"> -->
+    <meta property="og:image" content="{{ site.url }}/assets/site-thumbnail.png">
+
+    <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.png">
+    <meta name="theme-color" content="#1a9fdc">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ base_path }}/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
