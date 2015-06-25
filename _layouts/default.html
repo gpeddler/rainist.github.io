@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% if page.title %}
+    <title>{{ page.title }} | Rainist</title>
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://rainist.com{{ page.url }}">
+    <meta property="og:site_name" content="Rainist">
+    <meta property="og:description" content="{{ page.description }}">
+    {% else %}
+    <title>Rainist</title>
+    <meta property="og:title" content="Rainist">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.home_url }}">
+    <meta property="og:site_name" content="Rainist">
+    <meta property="og:description" content="레이니스트를 소개하며, 레이니스트 팀이 배운 교훈들을 공유하는 웹사이트입니다.">
+    {% endif %}
+    <!-- <meta property="og:image" content="image"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ base_path }}/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">메뉴 여닫기</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="../assets/logo_2x.png"alt="로고">
+                </a>
+            </div>
+            <nav id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="/">회사소개</a></li>
+                    <!-- <li><a href="#manage">경영지원</a></li> -->
+                    <!-- <li><a href="#products">제품개발</a></li> -->
+                    <!-- <li><a href="#tools">일하는 방식</a></li> -->
+                    <!-- <li><a href="#blog">블로그</a></li> -->
+                    <!-- <li><a href="#news">보도자료</a></li> -->
+                    <!-- <li><a href="#recruit">채용정보</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {{ content }}
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright text-muted">&copy; 2015 Rainist Co. Ltd. All rights reserved.</p>
+            <p class="comp text-muted">
+                사업자명. 주식회사 레이니스트 | 사업자 번호. 105-87-73978 | <a href="mailto:rainist@rainist.com">rainist@rainist.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

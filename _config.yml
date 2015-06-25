@@ -1,0 +1,18 @@
+# Site settings
+title: Rainist
+subtitle: 세상을 촉촉하게 만드는 사람들
+email: rainist@rainist.com
+description: 행복한 의사결정을 돕는 주식회사 레이니스트입니다.
+
+url: "http://rainist.com"
+
+# Build settings
+markdown: kramdown
+markdown_ext: "md"
+
+# Output
+permalink: pretty
+
+# Pagination
+paginate: 5
+paginate_path: "page/:num/"
