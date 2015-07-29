@@ -34,6 +34,10 @@ code {
   }
 }
 
+li {
+  list-style: none;
+}
+
 /* Header
 -------------------------------------------------- */
 
@@ -174,8 +178,8 @@ code {
 -------------------------------------------------- */
 
 .philosophy {
-  padding-top: 50px;
-  padding-bottom: 46px;
+  padding-top: 87px;
+  padding-bottom: 120px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../assets/bg.png');
@@ -331,14 +335,20 @@ code {
   font-weight: normal;
 }
 
-/* Team - Dev
--------------------------------------------------- */
-.team {
+/* Pages */
+.page {
   padding-top: 98px;
   padding-bottom: 45px;
   color: #90a4ae;
 }
 
-.team h2 {
+.page h2 {
   text-align: center;
+  font-weight: normal;
+}
+
+/* Recruit
+-------------------------------------------------- */
+.recruit .tabs {
+  margin-top: 48px;
 }
