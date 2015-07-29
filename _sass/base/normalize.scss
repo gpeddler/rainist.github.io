@@ -1,0 +1,42 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+}
+
+br {
+  @media #{$phone-sm} {
+    display: none;
+  }
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: $rain-500;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+
+  &:hover, &:focus {
+    color: $rain-700;
+  }
+}
+
+// Bootstrap Specific Reset Styles
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.text-muted {
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}

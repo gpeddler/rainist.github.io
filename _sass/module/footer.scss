@@ -1,0 +1,35 @@
+$module: 'footer';
+
+.#{$module} {
+  margin-top: 48px;
+  width: 100%;
+  background-color: #f5f5f5;
+
+  & > .container {
+    padding: 24px 15px;
+  }
+
+  .copyright {
+    margin: 20px 0 0 0;
+    line-height: 17px;
+    font-size: 14px;
+
+    &:before {
+      display: block;
+      float: left;
+      width: 49px;
+      height: 14px;
+      margin-right: 12px;
+      overflow: hidden;
+      background: url(/assets/footer_symbol.png);
+      background-size: 49px 14px;
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  .comp {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+}
