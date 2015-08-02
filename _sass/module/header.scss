@@ -6,23 +6,26 @@
 .navbar-default {
   border: none;
 
-  .navbar-nav > li > a {
-    color: white;
-    color: rgba(255, 255, 255, 0.7);
-    -webkit-transition: color 0.3s cubic-bezier(0.2, 0.33, 0.44, 0.7);
-    transition: color 0.3s cubic-bezier(0.2, 0.33, 0.44, 0.7);
-  }
+  .navbar-nav {
+    & > li {
+      & > a {
+        color: white;
+        color: rgba(255, 255, 255, 0.7);
+        -webkit-transition: color 0.3s cubic-bezier(0.2, 0.33, 0.44, 0.7);
+        transition: color 0.3s cubic-bezier(0.2, 0.33, 0.44, 0.7);
 
-  .navbar-nav>li>a {
-      &:focus, &:hover {
-      color: white;
+        &:focus, &:hover {
+          color: white;
+        }
+
+      }
     }
-  }
 
-  .navbar-nav>.active>a {
-    &, &:focus, &:hover {
-      background-color: transparent;
-      color: white;
+    & > .active > a {
+      &, &:focus, &:hover {
+        background-color: transparent;
+        color: white;
+      }
     }
   }
 
