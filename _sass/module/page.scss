@@ -1,0 +1,52 @@
+$module: 'page';
+
+.#{$module} {
+
+  padding-top: 98px;
+  padding-bottom: 45px;
+  color: #90a4ae;
+
+  h2 {
+    text-align: center;
+    font-weight: 200;
+  }
+
+  &__content {
+
+    &--md {
+      margin-top: 12px;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+  }
+
+  &--md {
+
+    p {
+      margin-top: 36px;
+    }
+
+    ul, ol {
+      margin-top: 36px;
+
+      h3 {
+        margin: 0;
+        line-height: 1.29;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      p {
+        margin: 6px 0 24px 0;
+      }
+
+    }
+
+    ul li {
+      list-style: disc;
+    }
+
+  }
+}
+

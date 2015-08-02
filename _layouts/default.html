@@ -58,6 +58,12 @@
                     {% endif %}
                     ><a href="/">회사소개</a></li>
 
+                    <li
+                    {% if page.url == '/philosophy/' %}
+                    class="active"
+                    {% endif %}
+                    ><a href="/philosophy">기업철학</a></li>
+
                     <!-- <li
                     {% if page.url == '/manage/' %}
                     class="active"
