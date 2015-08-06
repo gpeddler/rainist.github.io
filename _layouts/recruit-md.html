@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<section class="page">
+    <div class="container">
+        <div class="row recruit__top">
+            <img src="../assets/bg_recruit.png" alt="리쿠르트 관련 배경이미지" class="recruit__top__bg" />
+        </div>
+        <div class="container page__content--md recruit__common">
+            <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                {{ page.common }}
+            </div>
+        </div>
+        <div class="row recruit__tap">
+            <ul class="clearfix tap__list">
+            <li class="tap__item">
+                <a href="#" class="tap__item__inner on">개발팀</a>
+                <div class="tap__item__content">
+                    <div class="row recruit__header">
+                        <h2>
+                            {{ page.head }}
+                        </h2>
+                    </div>
+                    <div class="container page__content--md">
+                        <div class="col-sm-10 col-xs-12">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="tap__item">
+                <a href="#" class="tap__item__inner">디자인팀</a>
+                <div class="tap__item__content">
+                    <div class="row recruit__header">
+                        <h2>
+                            {{ page.head }}
+                        </h2>
+                    </div>
+                    <div class="container page__content--md">
+                        <div class="col-sm-10 col-xs-12">
+                            {{ page.head }}
+                        </div>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+</section>

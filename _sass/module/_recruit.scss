@@ -1,0 +1,105 @@
+$module: 'recruit';
+
+.#{$module} {
+    &__top {
+        overflow: hidden;
+        max-height: 200px;
+    }
+
+    &__top__bg {
+        width: 100%;
+        background-size: 925px 404px;
+    }
+
+    &__common {
+        margin: 40px 0 0;
+    }
+
+    &__tap {
+        margin: 40px -15px 0;
+    }
+
+    &__header {
+        margin: 40px 0 0;
+        padding: 0 10px;
+    }
+
+    &__header h2 {
+        font-size: 24px;
+    }
+}
+
+.tap {
+    &__list {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    &__item {
+        float: left;
+        width: 50%;
+    }
+
+    &__item__inner {
+        display: block;
+        box-sizing: border-box;
+        height: 50px;
+        border-bottom: 1px solid $rain-500;
+        font-size: 15px;
+        line-height: 50px;
+        transition: background 0.5s;
+    }
+
+    &__item__inner:hover,
+    &__item__inner:focus {
+        text-decoration: none;
+    }
+
+    &__item__inner.on {
+        background: $rain-500;
+        color: $color_white;
+        font-weight: $bold;
+    }
+
+    &__item__inner.on + &__item__content {
+        display: block;
+    }
+
+    &__item__content {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: left;
+        ul li {
+            list-style: disc;
+        }
+        ul, p {
+            margin-top: 36px;
+        }
+    }
+}
+
+@media only screen and (min-width:568px){
+    .#{$module} {
+        &__tap {
+            margin: 40px auto 0;
+            max-width: 96.33%;
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .#{$module} {
+        &__tap {
+            max-width: 82.33%;
+        }
+
+        &__header h2 {
+            font-size: 30px;
+        }
+    }
+}
