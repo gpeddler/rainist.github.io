@@ -1,0 +1,54 @@
+$phone-sm: "(max-width: 420px)";
+$phone: "(max-width: 768px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(max-width: 1024px)";
+
+$font-family: "Apple SD Gothic Neo", "Nanum Barun Gothic", "Malgun Gothic", "돋움", Dotum, sans-serif;
+
+$rain-300: #65caf8;
+$rain-400: #34b4eb;
+$rain-500: #009ede;
+$rain-700: #0478a7;
+$rain-800: #094a64;
+
+$primary-color: $rain-500;
+
+
+// Color Set
+// default
+$color_white: #fff;
+$color_black: #000;
+$color_dim: rgba(0, 0, 0, 0.7);
+$color_landing_top: #e1f3f3;
+
+//lettuce
+$lettuce-300: #cdf360;
+$lettuce-400: #b0e82e;
+$lettuce-500: #8ad32c;
+$lettuce-700: #58a31f;
+$lettuce-800: #297613;
+
+//carrot
+$carrot-300: #ffad82;
+$carrot-400: #ff8d5d;
+$carrot-500: #ff6e40;
+$carrot-700: #c63a22;
+$carrot-800: #900905;
+
+//paprika
+$paprika-300: #ffc43b;
+$paprika-500: #ffaf03;
+$paprika-700: #ff8500;
+$paprika-800: #e96c01;
+
+//gray
+$gray04: #f5f5f5;
+$gray12: #e1e1e1;
+$gray26: #c0c0c0;
+$gray54: #7b7b7b;
+$gray77: #434444;
+$gray87: #2b2b2b;
+$gray100: #0b0c0c;
+
+//font-weight
+$bold: 600;
