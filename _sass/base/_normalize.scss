@@ -41,3 +41,9 @@ body > .container {
     text-decoration: underline;
   }
 }
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: inherit;
+  background-color: inherit;
+}

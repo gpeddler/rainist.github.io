@@ -1,31 +1,19 @@
-.navbar {
-  background-color: $rain-500;
-  background-color: rgba(0, 158, 222, 0.75);
-}
-
 .navbar-default {
   border: none;
 
   .navbar-nav {
-    & > li {
-      & > a {
-        color: white;
-        color: rgba(255, 255, 255, 0.7);
-        -webkit-transition: color 0.3s cubic-bezier(0.2, 0.33, 0.44, 0.7);
-        transition: color 0.3s cubic-bezier(0.2, 0.33, 0.44, 0.7);
-
-        &:focus, &:hover {
-          color: white;
+        & > li {
+            & > a {
+                padding-top: 24px;
+                padding-bottom: 28px;
+                color:rgba(11, 12, 12, 0.34);
+            }
         }
 
-      }
-    }
-
-    & > .active > a {
-      &, &:focus, &:hover {
-        background-color: transparent;
-        color: white;
-      }
+    & > .active > a,
+    & > .active > a:hover{
+      color: #0091cc;
+      font-weight: bold;
     }
   }
 
@@ -46,12 +34,38 @@
   }
 }
 
+.navbar {
+    min-height: 72px;
+    line-height: 72px;
+    &__link--cbt {
+        display: inline-block;
+        width: 72px;
+        height: 72px;
+        background: url(../assets/ico_banksalad_small_2x.png) no-repeat;
+        -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/ico_banksalad_small_2x.png', sizingMethod='scale')";
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+
 .navbar-collapse {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
+.navbar-brand {
+    height: 24px;
+    padding: 24px 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #0091cc;
+}
+
 .navbar-brand > img {
-  height: 20px;
+  height: 21px;
+}
+.navbar-toggle {
+    padding: 19px 10px;
 }
