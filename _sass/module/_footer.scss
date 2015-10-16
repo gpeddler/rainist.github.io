@@ -17,12 +17,12 @@ $module: 'footer';
     &:before {
       display: block;
       float: left;
-      width: 49px;
+      width: 60px;
       height: 14px;
       margin-right: 12px;
       overflow: hidden;
       background: url(/assets/footer_symbol.png);
-      background-size: 49px 14px;
+      background-size: 60px 14px;
       background-repeat: no-repeat;
       content: '';
     }
