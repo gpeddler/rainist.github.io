@@ -1,6 +1,9 @@
 $module: 'recruit';
 
 .#{$module} {
+    b {color: $rain-500}
+    a {text-decoration: underline}
+    .tab__item__inner {text-decoration: none}
     &__top {
         padding-top: 87px;
         padding-bottom: 120px;
@@ -23,12 +26,27 @@ $module: 'recruit';
         font-size: 28px;
     }
 
+    &__desc {
+        b {color: inherit}
+        ul li {
+            &:before {
+                display: none;
+                content: '- '
+            }
+        }
+        margin: 60px 0 70px;
+        color: $gray54;
+        .recruit__desc__paragraph {margin: 4px 0 0}
+        .recruit__list {padding-left: 15px;margin: 0 0 18px}
+        .recruit__list li {list-style: none}
+    }
+
     &__tab {
         margin: 40px -15px 0;
     }
 
     &__header {
-        margin: 40px 0 0;
+        margin: 70px 0 0;
         padding: 0 10px;
     }
 
@@ -54,7 +72,7 @@ $module: 'recruit';
 
     &__item {
         float: left;
-        width: 50%;
+        width: 25%;
     }
 
     &__item__inner {
@@ -90,11 +108,26 @@ $module: 'recruit';
         width: 100%;
         text-align: left;
         ul li {
-            list-style: disc;
+            list-style: none;
+            &:before {
+                content: '- '
+            }
         }
         ul, p {
             margin-top: 28px;
         }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .tab__item__content ul, .tab__item__content p {
+        padding: 0;
+    }
+    .tab__item {
+        width: 50%;
+    }
+    .tab__item__content {
+        margin-top: 50px;
     }
 }
 
