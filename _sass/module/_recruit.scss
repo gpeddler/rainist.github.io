@@ -26,6 +26,9 @@ $module: 'recruit';
         font-size: 28px;
     }
 
+    &__list {
+        padding-left: 15px;
+    }
     &__desc {
         b {color: inherit}
         ul li {
@@ -37,7 +40,7 @@ $module: 'recruit';
         margin: 60px 0 70px;
         color: $gray54;
         .recruit__desc__paragraph {margin: 4px 0 0}
-        .recruit__list {padding-left: 15px;margin: 0 0 18px}
+        .recruit__list {margin: 0 0 18px}
         .recruit__list li {list-style: none}
     }
 
@@ -59,6 +62,15 @@ $module: 'recruit';
     &__head {
         margin: 56px 0 -8px 0;
         font-size: 22px;
+    }
+
+    &__dl {
+        dt {
+            margin-bottom: 20px;
+        }
+        strong {
+            margin-right: 10px;
+        }
     }
 }
 
