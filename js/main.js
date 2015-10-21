@@ -1,5 +1,5 @@
 $('document').ready(function () {
-    var listHeight = 150;
+    var listHeight = 180;
     (function () {
         var h = $('.tab__item__content').first().height();
         $('.tab__list').css('height', h + listHeight);
