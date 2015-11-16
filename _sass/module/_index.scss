@@ -189,19 +189,12 @@
 }
 
 .map-item {
-  cursor: pointer;
   margin-bottom: 8px;
   padding: 16px;
   color: #90a4ae;
   border-radius: 6px;
   -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
-}
-
-.active .map-item,
-.map-item:hover {
-  background-color: #edf7fe;
-  background-color: rgba(236, 246, 253, 0.77);
 }
 
 .map-item h3 {
