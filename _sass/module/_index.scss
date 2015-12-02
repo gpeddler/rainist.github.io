@@ -1,6 +1,4 @@
 .headline {
-  height: 14px;
-  margin: 0 0 90px 0;
   line-height: 22px;
   text-align: center;
   font-size: 17px;
@@ -15,9 +13,7 @@
 }
 
 .logo {
-  margin-bottom: 16px;
   height: 30px;
-  margin-left: 520px;
 }
 
 .illust {
@@ -84,25 +80,18 @@
 .intro {
   padding-top: 96px;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
   display: table;
 }
 
 .intro-desc {
   margin: 20px 0 0 0;
-  padding: 0 25% 0 25%;
   position: relative;
   float: right;
   width: auto;
   height: auto;
   font-size: 16px;
   color: $gray34;
-}
-
-.intro .row {
-  margin-bottom: 48px;
-  display: table-cell;
-  width: 400px;
 }
 
 /* About -- How
@@ -142,7 +131,7 @@
 }
 
 .whitelogo{
-  height: 27px;
+  height: 19px;
   margin: 45px 0 0 45px;
 
 }
@@ -154,14 +143,27 @@
 
 
 }
-.iconlogo{
-  height: auto;
-  text-align: center;
-  color: #ffffff;
+.iconlogo {
+
+    text-align: center;
+    margin-top: 120px;
+}
+
+.iconlogo__link {
+    display: block;
+}
+
+.iconlogo__link + .iconlogo__link {
+    margin-top: 10px;
+}
+.iconlogo__link,
+.iconlogo__link:hover,
+.iconlogo__link:active {
+    color: #fff;
 }
 .small-logo{
-    margin-top: 80px;
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
     height: 90px;
 }
 
