@@ -3,7 +3,7 @@ $module: 'footer';
 .#{$module} {
   margin-top: 48px;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: $gray54;
 
   & > .container {
     padding: 24px 15px;
@@ -13,6 +13,7 @@ $module: 'footer';
     margin: 20px 0 0 0;
     line-height: 17px;
     font-size: 14px;
+    color: #ffffff;
 
     &:before {
       display: block;
@@ -31,5 +32,6 @@ $module: 'footer';
   .comp {
     margin-top: 4px;
     font-size: 14px;
+    color: #ffffff;
   }
 }

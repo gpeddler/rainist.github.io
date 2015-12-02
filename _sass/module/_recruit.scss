@@ -5,25 +5,18 @@ $module: 'recruit';
     a {text-decoration: underline}
     .tab__item__inner {text-decoration: none}
     &__top {
-        padding-top: 87px;
-        padding-bottom: 120px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url('../assets/bg_recruit.png');
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background-color: $rain-700;
         background-position: center center;
     }
 
-    &__top__head {
-        display: inline-block;
-        margin-top: 36px;
-        padding: 28px 24px;
-        background-color: transparent;
-        background-color: rgba(255, 255, 255, 0.2);
-    }
+
 
     &__top__desc {
-        margin: 0;
+        margin-top: 20px;
         font-size: 32px;
+        color: #ffffff;
     }
 
     &__list {
