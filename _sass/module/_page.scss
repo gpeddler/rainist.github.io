@@ -8,7 +8,8 @@ $module: 'page';
 
   h2 {
     text-align: center;
-    font-weight: 200;
+    font-weight: 500;
+    color: $rain-500;
   }
 
   &__content {
@@ -49,4 +50,3 @@ $module: 'page';
 
   }
 }
-

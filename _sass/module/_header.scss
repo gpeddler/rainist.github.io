@@ -34,19 +34,7 @@
   }
 }
 
-.navbar {
-    min-height: 72px;
-    line-height: 72px;
-    &__link--cbt {
-        display: inline-block;
-        width: 72px;
-        height: 72px;
-        background: url(../assets/ico_banksalad_small_2x.png) no-repeat;
-        -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/ico_banksalad_small_2x.png', sizingMethod='scale')";
-        -webkit-background-size: cover;
-        background-size: cover;
-    }
-}
+
 
 .navbar-collapse {
   border: none;

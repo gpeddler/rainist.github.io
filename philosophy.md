@@ -1,7 +1,7 @@
 ---
 layout: page-md
 title: 기업철학
-head: 레이니스트가 믿는 6가지 철학들.
+head: 레이니스트가 믿는 6가지 철학들
 description: 레이니스트의 기업 철학들을 소개합니다.
 ---
 
