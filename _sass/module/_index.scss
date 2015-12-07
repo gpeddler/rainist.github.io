@@ -84,10 +84,13 @@
   display: table;
 }
 
-.intro-desc {
+.intro__row {
+  margin-top: 66px;
+}
+
+.intro__desc {
   margin: 20px 0 0 0;
   position: relative;
-  float: right;
   width: auto;
   height: auto;
   font-size: 16px;
@@ -112,8 +115,7 @@
 }
 
 .how {
-  margin-top: 60px;
-  padding-top: 78px;
+  margin-top: 86px;
 }
 
 .how-desc {
@@ -130,7 +132,7 @@
 
 }
 
-.whitelogo{
+.logo--white{
   height: 19px;
   margin: 45px 0 0 45px;
 
@@ -227,7 +229,7 @@
   width: 160px;
   margin: 0 26px 0 12px;
   color: $rain-500;
-  font-family: Noto;
+  font-family: $font-family-en;
   font-size: 24px;
 }
 
@@ -239,8 +241,12 @@
 
 
 @media (max-width: 768px) {
-  .chef-desc, .intro-desc {
+  .chef-desc {
     margin-top: 42px;
+  }
+
+  .intro__row {
+    margin-top: 26px;
   }
 }
 
