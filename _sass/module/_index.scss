@@ -127,22 +127,31 @@
 }
 
 .service{
-  background-color: $salad-500;
+  background-color: $gray04;
   height: 500px;
+  text-align: center;
 
 
 }
 
 .logo--white{
-  height: 19px;
-  margin: 45px 0 0 45px;
+  margin: 50px 0 10px 0;
+  height: 25px;
+
 
 }
 
+.servive-title{
+  color: #36cc7c;
+  text-align: left;
+}
+
 .service-desc{
-  color: #ffffff;
+  color: $gray77;
+  text-align: left;
   font-size: 14px;
   margin: 20px 0 0 45px;
+
 
 
 }
@@ -163,11 +172,6 @@
 .iconlogo__link:hover,
 .iconlogo__link:active {
     color: #fff;
-}
-.small-logo{
-    display: block;
-    margin: 0 auto;
-    height: 90px;
 }
 
 /* About -- BankSalad
