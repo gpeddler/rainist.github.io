@@ -139,7 +139,7 @@
   text-align: left;
   margin: 0 0 20px 0;
 
-  @media #{$phone-sm} {
+  @media #{$phone} {
     margin-top: 20px;
     //폰사이즈에서는 이렇게 해라
   }
