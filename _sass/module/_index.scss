@@ -128,35 +128,74 @@
 
 .service{
   background-color: $gray04;
-  height: 500px;
   text-align: center;
+  padding-bottom: 61px;
+}
+.service-row{
+  margin-top: 34px;
+}
+.service-title{
+  color: $salad-500;
+  text-align: left;
+  margin: 0 0 20px 0;
 
+  @media #{$phone} {
+    margin-top: 20px;
+    //폰사이즈에서는 이렇게 해라
+  }
+}
+.service-button{
+  height: auto;
+  width: auto;
+  background-color: $salad-500;
+  border-radius: 3px;
+  padding: 10px;
 
+  &:hover{
+  background-color: $salad-600;
+  }
+
+  a{
+    color: white;
+    font-weight: 600;
+
+    &:after {
+      margin-left: 8px;
+      content: '▶';
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.service-button--white{
+  background-color: transparent;
+  border: 1px $salad-500 solid;
+  margin-bottom: 7px;
+
+  &:hover{
+    background-color: white;
+  }
+
+  a {
+    color: $salad-500;
+  }
 }
 
 .logo--white{
-  margin: 50px 0 10px 0;
+  margin: 50px 0 20px 0;
   height: 25px;
-
-
-}
-
-.servive-title{
-  color: #36cc7c;
-  text-align: left;
 }
 
 .service-desc{
   color: $gray77;
   text-align: left;
   font-size: 14px;
-  margin: 20px 0 0 45px;
-
-
-
+  margin-bottom: 35px;
 }
 .iconlogo {
-
     text-align: center;
     margin-top: 120px;
 }
