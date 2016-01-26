@@ -1,19 +1,27 @@
 .navbar-default {
+  background: none;
   border: none;
+  border-bottom: 1px solid $color_white;
 
   .navbar-nav {
-        & > li {
-            & > a {
-                padding-top: 24px;
-                padding-bottom: 28px;
-                color:rgba(11, 12, 12, 0.34);
-            }
+    & > li {
+        & > a {
+            padding-top: 24px;
+            padding-bottom: 28px;
+            color:rgba(255, 255, 255, 0.73);
         }
+
+        & > a:hover {
+          color: $color_white;
+        }
+    }
 
     & > .active > a,
     & > .active > a:hover{
-      color: #0091cc;
+      padding-bottom: 25px;
+      color: $color_white;
       font-weight: bold;
+      border-bottom: 3px solid $color_white;
     }
   }
 
@@ -40,15 +48,31 @@
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+
+  // &.in,
+  // &.collapsing {
+  //   background: $color_white;
+  //
+  //   li {
+  //       & > a {
+  //           color: rgba(11, 12, 12, 0.34);
+  //       }
+  //
+  //       & > a:hover {
+  //         color: #333;
+  //       }
+  //   }
+  //
+  //   .active > a,
+  //   .active > a:hover{
+  //     color: #0091cc;
+  //   }
+  // }
 }
 
 .navbar-brand {
     height: 24px;
     padding: 24px 15px;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #0091cc;
 }
 
 .navbar-brand > img {

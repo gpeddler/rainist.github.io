@@ -7,7 +7,9 @@
 
 .title{
   height: 45px;
-  color: $gray77;
+  color: $rain-new;
+  font-size: 20px;
+  font-weight: bold;
   text-align: left;
   margin: 0 0 45px 0;
 }
@@ -45,33 +47,17 @@
 }
 
 
-/* About -- Philosophy
+/* About -- Cover
 -------------------------------------------------- */
 
-.philosophy {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-color: $rain-500;
-  background-position: center center;
+.cover {
+  background: url('/assets/cover_intro.png') no-repeat center center;
+  background-size: cover;
 
-}
-
-.philosophy-box {
-  display: inline-block;
-  padding: 28px 24px;
-  color: #fff;
-
-}
-
-.philosophy-title {
-  display: inline-block;
-  margin: 0px;
-  font-size: 18px;
-}
-
-.philosophy-desc {
-  margin-top: 18px;
-  font-size: 32px;
+  .cover_icon {
+    padding-top: 295px;
+    padding-bottom: 230px;
+  }
 }
 
 /* About -- Intro
@@ -318,13 +304,16 @@
 .map-item {
   margin-bottom: 8px;
   padding: 16px;
-  color: #90a4ae;
+  color: rgba(11, 12, 12, 0.56);
   border-radius: 6px;
   -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
+
+  text-align: right;
 }
 
 .map-item h3 {
+  color: rgba(11, 12, 12, 0.34);
   font-size: 21px;
   font-weight: normal;
 }

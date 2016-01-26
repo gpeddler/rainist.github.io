@@ -52,59 +52,52 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="/" class="navbar-brand">
-                    <img src="../assets/logo_2x.png"alt="로고">
+                    <img src="../assets/logo_rainist.png"alt="로고">
                 </a>
             </div>
             <nav id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li
-                    {% if page.url == '/' %}
-                    class="active"
-                    {% endif %}
-                    ><a href="/">회사소개</a></li>
-
-                    <li
-                    {% if page.url == '/philosophy/' %}
-                    class="active"
-                    {% endif %}
-                    ><a href="/philosophy">기업철학</a></li>
-
-
-                    <!-- <li
-                    {% if page.url == '/dev/' %}
-                    class="active"
-                    {% endif %}
-                    ><a href="/dev">제품개발</a></li> -->
-
-                    <!-- <li
-                    {% if page.url == '/works/' %}
-                    class="active"
-                    {% endif %}
-                    ><a href="/works">일하는 방식</a></li>
-
-                    <li
-                    {% if page.url == '/blog/' %}
-                    class="active"
-                    {% endif %}
-                    ><a href="/blog">블로그</a></li>
-
-                    <li
-                    {% if page.url == '/news/' %}
-                    class="active"
-                    {% endif %}
-                    ><a href="/news">보도자료</a></li> -->
-
-                    <li
-                    {% if page.url == '/recruit/' %}
-                    class="active"
-                    {% endif %}
-                    ><a href="/recruit">채용정보</a>
+                      {% if page.url == '/' %}
+                        class="active"
+                      {% endif %}>
+                      <a href="/">회사소개</a>
                     </li>
+
                     <li
-                   {% if page.url == '/presskit/' %}
-                   class="active"
-                   {% endif %}
-                   ><a target="_blank" href="/assets/rainist_presskit.pdf">Press kit</a></li>
+                      {% if page.url == '/banksalad/' %}
+                      class="active"
+                      {% endif %}>
+                      <a href="/banksalad">뱅크샐러드</a>
+                    </li>
+
+                    <li
+                      {% if page.url == '/member/' %}
+                      class="active"
+                      {% endif %}>
+                      <a href="/member">채용정보</a>
+                    </li>
+
+                    <li
+                      {% if page.url == '/blog/' %}
+                      class="active"
+                      {% endif %}>
+                      <a href="/blog">블로그</a>
+                    </li>
+
+                    <li
+                      {% if page.url == '/recruit/' %}
+                      class="active"
+                      {% endif %}>
+                      <a href="/recruit">채용</a>
+                    </li>
+
+                    <li
+                     {% if page.url == '/presskit/' %}
+                     class="active"
+                     {% endif %}>
+                     <a target="_blank" href="/assets/rainist_presskit.pdf">보도자료</a>
+                   </li>
                 </ul>
             </nav>
         </div>
