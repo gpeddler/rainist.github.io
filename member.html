@@ -78,3 +78,15 @@ layout: default
         </div>
     </section>
 </div>
+
+<script>
+    $('.member-trigger').on('click', function(e) {
+        var target = $($(e.target).parents(".member-item")[0]);
+
+        if (target.hasClass("active")) {
+            target.removeClass("active");
+        } else {
+            target.addClass("active");
+        }
+    });
+</script>
