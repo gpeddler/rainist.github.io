@@ -6,32 +6,38 @@ $module: 'footer';
   background-color: $gray54;
 
   & > .container {
-    padding: 24px 15px;
+    padding: 60px 15px 50px 15px;
   }
 
-  .copyright {
-    margin: 20px 0 0 0;
-    line-height: 17px;
-    font-size: 14px;
-    color: #ffffff;
+  &-brand {
+    margin-bottom: 33px;
+  }
 
-    &:before {
-      display: block;
-      float: left;
-      width: 60px;
-      height: 14px;
-      margin-right: 12px;
-      overflow: hidden;
-      background: url(/assets/footer_symbol.png);
-      background-size: 60px 14px;
-      background-repeat: no-repeat;
-      content: '';
+  &-copyright {
+    margin-bottom: 7px;
+    color: rgba(255, 255, 255, 0.54);
+    font-size: 14px;
+  }
+
+  &-address {
+    color: rgba(255, 255, 255, 0.34);
+    font-size: 12px;
+  }
+
+  &-service-list {
+    & > li {
+      padding: 7px 0;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.12);
     }
-  }
 
-  .comp {
-    margin-top: 4px;
-    font-size: 14px;
-    color: #ffffff;
+    & > li a {
+      color: #E1E1E1;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    & > li a:hover {
+      color: $color_white;
+    }
   }
 }
