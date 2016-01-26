@@ -33,6 +33,30 @@ layout: default
                     뱅크샐러드는 카드사에서 제공하는 혜택 정보를 단순히 나열하지 않습니다.
                     2,400여 개 카드, 13만여 개 이상의 혜택을 직접 수집/분석하여 계산 가능한 형태로 데이터화했습니다.
                 </div>
+
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12">
+                    <ul class="member-list">
+                        <li class="member-item active">
+                            <div class="member-preview">
+                                <img class="member-profile" src="{{ site.ceo.url }}" />
+                                <span class="member-name">
+                                    {{ site.ceo.name }}<br/>
+                                    <b>{{ site.ceo.job }}</b>
+                                </span>
+                            </div>
+                            <div class="member-desc">
+                                <p class="desc">
+                                    {{ site.ceo.desc }}
+                                </p>
+                                <p class="post_script">
+                                    쓰고 있는 카드 : {{ site.ceo.card }}<br/>
+                                    보유 상품 : {{ site.ceo.product }}
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -49,7 +73,7 @@ layout: default
             </div>
             <div class="row">
                 <div class="col-md-2 col-xs-12"></div>
-                <div class="col-md-10 col-xs-12 form-desc">
+                <div class="col-md-10 col-xs-12">
                     <ul class="member-list">
                         {% for member in site.members %}
                             <li class="member-item">
