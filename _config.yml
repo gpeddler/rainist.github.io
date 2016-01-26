@@ -27,8 +27,8 @@ ceo: {
     product: "KB 동물농장 적금"
 }
 
-# Members
-members: [
+# Members (Team. product)
+members_product: [
   {
       url: "/assets/profile_sample.png",
       name: "황이슬",
@@ -40,8 +40,36 @@ members: [
   {
       url: "/assets/profile_sample.png",
       name: "황성현",
-      job: "씨티오",
+      job: "CTO",
       desc: "민사고 졸업한 특급 엘리트인줄 알았으나, 깔깔깔!@# 하는 웃음소리로 여친에게 구박받는 개발자이다. 그는 사내연애 중이다.",
+      card: "외환 2X 알파",
+      product: "KB 동물농장 적금"
+  },
+  {
+      url: "/assets/profile_sample.png",
+      name: "변재원",
+      job: "개발자",
+      desc: "레이니스트 멤버 중 가장 여성스러우며, 독특한 질감의 옷이 보이면 만지는 습관이 있다.",
+      card: "외환 2X 알파",
+      product: "KB 동물농장 적금"
+  }
+]
+
+# Members (Team. Data)
+members_data: [
+  {
+      url: "/assets/profile_sample.png",
+      name: "박규인",
+      job: "도공",
+      desc: "폭력배1",
+      card: "외환 2X 알파",
+      product: "KB 동물농장 적금"
+  },
+  {
+      url: "/assets/profile_sample.png",
+      name: "김광훈",
+      job: "인사담당자",
+      desc: "폭력배2",
       card: "외환 2X 알파",
       product: "KB 동물농장 적금"
   }

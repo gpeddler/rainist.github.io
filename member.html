@@ -61,7 +61,7 @@ layout: default
         </div>
     </section>
 
-    <section class="members">
+    <section class="team_product">
         <div class="container">
             <h2 class="title">PROUCT DEVELOPEMENT</h2>
             <div class="row">
@@ -75,7 +75,48 @@ layout: default
                 <div class="col-md-2 col-xs-12"></div>
                 <div class="col-md-10 col-xs-12">
                     <ul class="member-list">
-                        {% for member in site.members %}
+                        {% for member in site.members_product %}
+                            <li class="member-item">
+                                <a role="button" class="member-trigger"></a>
+                                <div class="member-preview">
+                                    <img class="member-profile" src="{{ member.url }}" />
+                                    <span class="member-name">
+                                        {{ member.name }}<br/>
+                                        <b>{{ member.job }}</b>
+                                    </span>
+                                </div>
+                                <div class="member-desc">
+                                    <p class="desc">
+                                        {{ member.desc }}
+                                    </p>
+                                    <p class="post_script">
+                                        쓰고 있는 카드 : {{ member.card }}<br/>
+                                        보유 상품 : {{ member.product }}
+                                    </p>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team_data">
+        <div class="container">
+            <h2 class="title">FINANCIAL ANALYSIS</h2>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12 form-desc">
+                    우리는 분야를 뛰어넘어 모두 같은 문제를 해결하는 사람입니다.
+                    디자이너와 소프트웨어 엔지니어 그리고 도메인 전문가가 모여 서비스를 기획하고 만들어 나갑니다.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12">
+                    <ul class="member-list">
+                        {% for member in site.members_data %}
                             <li class="member-item">
                                 <a role="button" class="member-trigger"></a>
                                 <div class="member-preview">
