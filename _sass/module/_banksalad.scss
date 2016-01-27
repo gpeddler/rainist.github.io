@@ -23,7 +23,7 @@ $module: 'banksalad';
         position: relative;
         width: 108px;
         height: 108px;
-        margin-top: 295px;
+        margin-top: 250px;
         background: url('/assets/ico_play.png');
         background-size: 108px 108px;
     }
@@ -42,7 +42,7 @@ $module: 'banksalad';
     }
 
     &.cover {
-        height: 611px;
+        height: 682px;
         background: url('/assets/cover_banksalad.png') no-repeat center;
         background-size: cover;
     }
