@@ -1,3 +1,7 @@
+.presskit .title {
+  margin: 0;
+}
+
 /* Presskit -- Cover
 -------------------------------------------------- */
 
@@ -6,4 +10,102 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* Presskit -- presskit
+-------------------------------------------------- */
+
+.release-list {
+  padding: 0;
+  border-top: 1px solid rgba(11, 12, 12, 0.12);
+}
+
+.release-item {
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid rgba(11, 12, 12, 0.12);
+  overflow: auto;
+}
+
+.release-media,
+.release-date {
+  display: block;
+  float: left;
+
+  width: 100px;
+  color: rgba(11, 12, 12, 0.12);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.release-link {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+
+  color: rgba(11, 12, 12, 0.56);
+  font-size: 20px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Presskit -- Info
+-------------------------------------------------- */
+
+.info-content {
+  display: block;
+  margin-bottom: 95px;
+  font-size: 16px;
+}
+
+.contact-link {
+  color: rgba(11, 12, 12, 0.56);
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.download-title {
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(11, 12, 12, 0.56);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.download-link {
+  display: block;
+  width: 100%;
+  min-height: 75px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(11, 12, 12, 0.34);
+  border-radius: 2px;
+  text-align: center;
+  opacity: 1;
+}
+
+.download-link:hover {
+  opacity: 0.5;
+}
+
+.download-txt {
+  display: block;
+  padding: 22px 0 22px 0;
+  color: rgba(11, 12, 12, 0.56);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.download-img-logo {
+  padding: 25px 0 25px 0;
+}
+
+.download-img-app {
+  padding-top: 13px;
+}
+
+.download-img-web {
+  padding: 15px 0 5px 0;
 }
