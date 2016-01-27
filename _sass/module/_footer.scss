@@ -25,6 +25,12 @@ $module: 'footer';
   }
 
   &-service-list {
+    padding: 0;
+
+    @media #{$phone} {
+      display: none;
+    }
+
     & > li {
       padding: 7px 0;
       border-bottom: 2px solid rgba(255, 255, 255, 0.12);

@@ -1,8 +1,11 @@
-.headline {
-  line-height: 22px;
-  text-align: center;
-  font-size: 17px;
-  color: $gray54;
+section {
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+section.grey {
+  border-top: 1px solid rgba(11, 12, 12, 0.12);
+  background: #F5F5F5;
 }
 
 .title{
@@ -14,250 +17,86 @@
   margin: 0 0 45px 0;
 }
 
-.logo {
-  height: 30px;
+.subtitle {
+  color: rgba(11, 12, 12, 0.56);
+  font-size: 34px;
+  font-weight: 300;
 }
 
-.illust {
-  width: 162px;
-  height: 162px;
+.division {
+  width: 100px;
+  border-top: 2px solid #979797;
+  margin-top: 70px;
+  margin-bottom: 50px;
+
+  &.colored {
+    border-top: 2px solid $rain-new;
+  }
 }
 
-.row-illust {
-  text-align: center;
-}
+.cover {
+  &_icon {
+    padding-top: 295px;
+    padding-bottom: 230px;
+  }
 
-.sub_strong {
+  &_comment {
     display: block;
-    margin-bottom: 10px;
-}
+    color: $color_white;
+    font-size: 60px;
+    font-weight: 300;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.50);
 
-.sub_link {
-    font-size: 19px;
-}
+    padding-top: 285px;
+    padding-bottom: 240px;
+  }
 
-.sub_link + .sub_link {
-    margin-left: 30px;
-}
-
-.sub__lnk__wrap {
-    display: block;
-    margin: 60px 0 77px;
+  .container {
     text-align: center;
+  }
 }
 
-.container:before {
+.form {
+  &-icon {
+    margin-bottom: 48px;
+  }
 
+  &-title {
+    color: rgba(11, 12, 12, 0.77);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 19px;
+  }
+
+  &-desc {
+    color: rgba(11, 12, 12, 0.34);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 34px;
+  }
+
+  &-tip {
+    float: right;
+    color: rgba(11, 12, 12, 0.56);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 50px;
+  }
 }
 
 /* About -- Cover
 -------------------------------------------------- */
 
-.cover {
-  background: url('/assets/cover_intro.png') no-repeat center center;
+.about .cover {
+  background: url('/assets/cover_intro.png');
   background-size: cover;
-
-  .cover_icon {
-    padding-top: 295px;
-    padding-bottom: 230px;
-  }
-}
-
-/* About -- Intro
--------------------------------------------------- */
-
-.intro {
-  padding-top: 96px;
-  font-weight: 500;
-  text-align: center;
-  display: table;
-}
-
-.intro__row {
-  margin-top: 66px;
-}
-
-.intro__desc {
-  margin: 20px 0 0 0;
-  position: relative;
-  width: auto;
-  height: auto;
-  font-size: 16px;
-  color: $gray34;
-}
-
-/* About -- How
--------------------------------------------------- */
-
-.subtitle{
-  color: $rain-500;
-  font-size: 26px;
-  text-align: center;
-  font-weight: normal;
-  line-height: 34px;
-
-}
-.line{
-  margin: 0 0 64px 0;
-  height:1px;
-  background-color:$gray12;
-}
-
-.how {
-  margin-top: 60px;
-  padding-top: 0;
-}
-
-.how-desc {
-  margin: 54px 0 0 0;
-  font-size: 16px;
-  color: $gray77;
-  text-align: center;
-}
-
-.service{
-  background-color: $gray04;
-  text-align: center;
-  padding-bottom: 61px;
-}
-.service-row{
-  margin-top: 34px;
-}
-.service-title{
-  color: $salad-500;
-  text-align: left;
-  margin: 0 0 20px 0;
-
-  @media #{$phone} {
-    margin-top: 20px;
-    //폰사이즈에서는 이렇게 해라
-  }
-}
-.service-button{
-  height: auto;
-  width: auto;
-  background-color: $salad-500;
-  border-radius: 3px;
-  padding: 10px;
-
-  &:hover{
-  background-color: $salad-600;
-  }
-
-  a{
-    color: white;
-    font-weight: 600;
-
-    &:after {
-      margin-left: 8px;
-      content: '▶';
-    }
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
-.service-button--white{
-  background-color: transparent;
-  border: 1px $salad-500 solid;
-  margin-bottom: 7px;
-
-  &:hover{
-    background-color: white;
-  }
-
-  a {
-    color: $salad-500;
-  }
-}
-
-.logo--white{
-  margin: 50px 0 20px 0;
-  height: 25px;
-}
-
-.service-desc{
-  color: $gray77;
-  text-align: left;
-  font-size: 14px;
-  margin-bottom: 35px;
-}
-.iconlogo {
-    text-align: center;
-    margin-top: 120px;
-}
-
-.iconlogo__link {
-    display: block;
-}
-
-.iconlogo__link + .iconlogo__link {
-    margin-top: 10px;
-}
-.iconlogo__link,
-.iconlogo__link:hover,
-.iconlogo__link:active {
-    color: #fff;
-}
-
-
-/* About -- Chef
--------------------------------------------------- */
-.chef-divider{
-  float: left;
-  height: 30px;
-  width: 3px;
-  background-color: $rain-500;
-  margin-bottom: 6px;
-  margin-left: 13px;
-}
-
-.chef {
-  text-align: left;
-  padding-top: 96px;
-  position: relative;
-}
-
-.chef-desc {
-  margin: 0 12px 20px 12px;
-  font-size: 18px;
-  color: $gray34;
-}
-
-.chef-title{
-  float: left;
-  width: 160px;
-  margin: 0 26px 0 12px;
-  color: $rain-500;
-  font-family: $font-family-en;
-  font-size: 24px;
-}
-
-
-.chef .row {
-  margin-bottom: 48px;
-  float: left;
-}
-
-
-@media (max-width: 768px) {
-  .chef-desc {
-    margin-top: 42px;
-  }
-
-  .intro__row {
-    margin-top: 26px;
-  }
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* About -- Contact
 -------------------------------------------------- */
-
-.contact {
-  padding-top: 48px;
-}
 
 .contact .row {
   padding: 0 32px;
