@@ -39,7 +39,7 @@ layout: default
                     <ul class="member-list">
                         <li class="member-item active">
                             <div class="member-preview">
-                                <img class="member-profile" src="{{ site.ceo.url }}" />
+                                <img class="member-profile" src="{{ site.ceo.img_large }}" />
                                 <span class="member-name">
                                     <span>{{ site.ceo.name }}</span>
                                     <b>{{ site.ceo.job }}</b>
@@ -79,7 +79,8 @@ layout: default
                             <li class="member-item">
                                 <a role="button" class="member-trigger"></a>
                                 <div class="member-preview">
-                                    <img class="member-profile" src="{{ member.url }}" />
+                                    <img class="member-profile small" src="{{ member.img_small }}" />
+                                    <img class="member-profile large" src="{{ member.img_large }}" />
                                     <span class="member-name">
                                         <span>{{ member.name }}<span/>
                                         <b>{{ member.job }}</b>
@@ -120,7 +121,8 @@ layout: default
                             <li class="member-item">
                                 <a role="button" class="member-trigger"></a>
                                 <div class="member-preview">
-                                    <img class="member-profile" src="{{ member.url }}" />
+                                    <img class="member-profile small" src="{{ member.img_small }}" />
+                                    <img class="member-profile large" src="{{ member.img_large }}" />
                                     <span class="member-name">
                                         <span>{{ member.name }}<span/>
                                         <b>{{ member.job }}</b>
