@@ -56,17 +56,23 @@ $module: 'banksalad';
     }
 
     &__feature {
+        .form-area-dotted {
+            display: block;
+            width: 92px;
+            height: 92px;
+            text-align: center;
+        }
         .form-icon--data {
-            width: 76px;
-            height: 70px;
+            margin-top: 15px;
+            margin-bottom: 0;
         }
         .form-icon--tech {
-            width: 80px;
-            height: 56px;
+            margin-top: 8px;
+            margin-bottom: 0;
         }
         .form-icon--trust {
-            width: 80px;
-            height: 57px;
+            margin-top: 17px;
+            margin-bottom: 0;
         }
         .form-title {
             font-weight: 300;
@@ -91,12 +97,9 @@ $module: 'banksalad';
     }
     &__service__img-wrap {
         position: relative;
-        overflow: hidden;
-        height: 240px;
     }
     &__service__img {
         width: 100%;
-        height: 100%;
     }
 
     &__service__title {
