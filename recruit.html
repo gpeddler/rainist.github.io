@@ -116,14 +116,13 @@ layout: default
                     <th class="align-right">마감일</th>
                 </tr>
 
-                <tr>
-                    <td class="align-left">뱅크샐러드 앱 서버 개발자</td>
-                    <td class="align-right">~2016.02.20</td>
-                </tr>
-                <tr>
-                    <td class="align-left">뱅크샐러드 앱 서버 개발자</td>
-                    <td class="align-right">~2016.02.20</td>
-                </tr>
+                {% for notice in site.recruit %}
+                    {% capture md-include %}{% include {{ notice.content }} %}{% endcapture %}
+                    <tr onclick='onNoticeOpen(`{{ notice.title }}`, `{{ md-include | markdownify }}`)'>
+                        <td class="align-left">{{ notice.title }}</td>
+                        <td class="align-right">{{ notice.date }}</td>
+                    </tr>
+                {% endfor %}
             </table>
 
             <div class="row">
@@ -141,24 +140,12 @@ layout: default
     </section>
 
     <section class="popup">
-        <div class="popup-title">
-            뱅크샐러드 앱 개발자
-        </div>
-        <a role="button" class="popup-close"></a>
+        <div class="popup-title"></div>
+        <a role="button" onclick="onNoticeClose()" class="popup-close"></a>
 
         <div class="popup-content">
-            <span class="job-subtitle">모집인원</span>
-            <p class="job-desc">
-                웹 O명, 서버 O명, 안드로이드 O명
-            </p>
-            <span class="job-subtitle">인재상</span>
-            <p class="job-desc">
-                스타트업이 대안이 아닌 분을 원합니다.<br/>
-                제품에 대해 끊임없이 고민하고 생각하는 분을 원합니다.<br/>
-                해커 중심의 문화를 함께 만들어가고 싶으신 분들을 원합니다.<br/>
-                언제나 더 나은 방법이 있다고 믿는 분을 원합니다.<br/>
-                UX에 관심이 많으신 분이면 좋겠습니다.
-            </p>
+            <div class="row content-md">
+            </div>
 
             <div class="row">
                 <div class="col-md-6 col-xs-12 form-desc">
@@ -187,4 +174,17 @@ layout: default
             target.addClass("active");
         }
     });
+
+    function onNoticeOpen(title, content) {
+        $($('.popup')[0]).addClass("on");
+        $($('.dim')[0]).addClass("on");
+
+        $($('.popup-title')[0]).html(title);
+        $($('.content-md')[0]).html(content);
+    }
+
+    function onNoticeClose() {
+        $($('.popup')[0]).removeClass("on");
+        $($('.dim')[0]).removeClass("on");
+    }
 </script>

@@ -207,3 +207,12 @@ news: [
         date: "2016.01.22"
     }
 ]
+
+# Recruit
+recruit: [
+    {
+        title: "뱅크샐러드 앱개발자 모집",
+        date: "~ 2016.02.02",
+        content: "recruit/notice_developer_160202.md"
+    }
+]

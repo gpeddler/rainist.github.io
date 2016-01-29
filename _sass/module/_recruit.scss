@@ -23,6 +23,8 @@
   float: left;
 
   width: calc(50% - 19px);
+  height: 500px;
+  max-height: 74px;
   margin: 0 19px 19px 0;
   position: relative;
   padding: 20px 30px;
@@ -50,6 +52,7 @@
 
 .job-item.active {
   width: calc(100% - 19px);
+  max-height: 500px;
 
   @media #{$phone} {
     width: calc(100% - 20px);
@@ -121,7 +124,12 @@
   }
 
   & tr {
+    cursor: pointer;
     border-bottom: 1px solid rgba(11, 12, 12, 0.12);
+  }
+
+  & tr:hover > td {
+    background: rgba(0, 0, 0, 0.01);
   }
 
   & th, & td {
@@ -177,6 +185,8 @@
 -------------------------------------------------- */
 
 .popup {
+  display: none;
+
   position: fixed;
   left: calc(50% - 400px);
   top: 10%;
@@ -220,31 +230,43 @@
     width: 100%;
     height: calc(100% - 71px);
 
-    padding: 0 40px;
+    padding: 40px;
     overflow-y: scroll;
 
-    & .job-subtitle {
-      display: block;
-      width: 100%;
-      margin-top: 40px !important;
+    & h4 {
+      margin: 0 0 10px 0;
+
+      color: rgba(11, 12, 12, 0.56);
+      font-size: 16px;
+      font-weight: bold;
     }
 
-    & .job-desc {
-      display: block;
-      width: 100%;
-      margin-top: 10px !important;
+    & ul {
+      padding: 0;
+      margin: 0 0 35px 0;
     }
 
-    & .row {
-      margin-top: 60px;
+    & li {
+      margin: 0 0 5px 0;
+
+      color: #686868;
+      font-size: 17px;
+      font-weight: 300;
     }
   }
 }
+
+.popup.on {
+  display: block;
+}
+
 
 /* Recruit -- Dim
 -------------------------------------------------- */
 
 .dim {
+  display: none;
+
   position: fixed;
   left: 0;
   top: 0;
@@ -253,4 +275,8 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.34);
+}
+
+.dim.on {
+  display: block;
 }
