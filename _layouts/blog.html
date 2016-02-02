@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="blog-content">
+    <section class="cover">
+        {% if page.cover %}
+            <img src="{{ page.cover }}" class="substance_cover">
+        {% endif %}
+        <div class="container">
+            <span class="cover_comment">{{ page.title }}</span>
+        </div>
+    </section>
+
+    <section class="substance">
+        <div class="container">
+            <div class="substance_header">
+                <div class="substance-50">
+                    <span class="article_tag">Design</span>
+                    <span class="article_tag">Design</span>
+                    <span class="article_tag">Design</span>
+                </div>
+                <div class="substance-50 substance_right">
+                    <span class="article_date">{{ page.date | date: "%B %-d, %Y" }}</span>
+                </div>
+            </div>
+            <hr class="division" />
+
+            <div class="row container-sub substance_text">
+                {{ content }}
+            </div>
+
+            <div class="row container-sub">
+                <div class="article_owner">
+                    <img src="/assets/profile_sample.png" />
+                    <span>{{ page.owner }}</span>
+                </div>
+            </div>
+
+            <div class="substance_footer">
+                <div class="substance-50">
+                    <span class="article_tag">Design</span>
+                    <span class="article_tag">Design</span>
+                    <span class="article_tag">Design</span>
+                </div>
+                <div class="substance-50 substance_right">
+                    <a href="#" class="article_link text">copy link</a>
+                    <a href="#" class="article_link facebook"><img src="/assets/ico_link_facebook.png"/></a>
+                    <a href="#" class="article_link twitter"><img src="/assets/ico_link_twitter.png"/></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="substance_pager">
+        <div class="container">
+            <a href="#" class="substance_direction prev">
+                <span>Prev</span>
+                <span>스타트업이 꼭 봐야할 지표</span>
+            </a>
+            <a href="#" class="substance_direction next">
+                <span>Next</span>
+                <span>스타트업이 꼭 봐야할 지표</span>
+            </a>
+        </div>
+    </nav>
+</div>
