@@ -15,10 +15,7 @@ permalink: "blog/:year/:month/:day/:slug"
 
 presskit: "/assets/rainist_presskit.pdf"
 
-recruit: [
-    {
-        title: "뱅크샐러드 앱개발자 모집",
-        date: "~ 2016.02.02",
-        content: "recruit/notice_developer_160202.md"
-    }
-]
+collections:
+    jobs:
+        output: true
+        permalink: "/jobs/:path"

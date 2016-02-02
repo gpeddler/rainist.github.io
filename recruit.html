@@ -116,12 +116,11 @@ layout: default
                     <th class="align-right">마감일</th>
                 </tr>
 
-                {% for notice in site.recruit %}
-                    {% capture md-include %}{% include {{ notice.content }} %}{% endcapture %}
-                    <tr onclick='onNoticeOpen(`{{ notice.title }}`, `{{ md-include | markdownify }}`)'>
-                        <td class="align-left">{{ notice.title }}</td>
-                        <td class="align-right">{{ notice.date }}</td>
-                    </tr>
+                {% for notice in site.jobs %}
+                <tr onclick='onNoticeOpen(`{{ notice.title }}`, `{{ notice.content | markdownify }}`)'>
+                    <td class="align-left">{{ notice.title }}</td>
+                    <td class="align-right">{{ notice.due }}</td>
+                </tr>
                 {% endfor %}
             </table>
 
@@ -129,7 +128,7 @@ layout: default
                 <div class="col-md-6 col-xs-12 form-desc">
                 </div>
                 <div class="col-md-6 col-xs-12 form-desc">
-                    <a role="button" class="notice-submit">
+                    <a href="mailto:rainist@rainist.com" role="button" class="notice-submit">
                         <img src="/assets/ico_send.png" />
                         <span>레이니스트 지원하기</span>
                         <b>rainist@rainist.com</b>
@@ -151,7 +150,7 @@ layout: default
                 <div class="col-md-6 col-xs-12 form-desc">
                 </div>
                 <div class="col-md-6 col-xs-12 form-desc">
-                    <a role="button" class="notice-submit">
+                    <a href="mailto:rainist@rainist.com" role="button" class="notice-submit">
                         <img src="/assets/ico_send.png" />
                         <span>레이니스트 지원하기</span>
                         <b>rainist@rainist.com</b>
