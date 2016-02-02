@@ -1,158 +1,282 @@
-$module: 'recruit';
-
-.#{$module} {
-    b {color: $rain-500}
-    a {text-decoration: underline}
-    .tab__item__inner {text-decoration: none}
-    &__top {
-        padding-top: 150px;
-        padding-bottom: 150px;
-        background-color: $rain-700;
-        background-position: center center;
-    }
-
-
-
-    &__top__desc {
-        margin-top: 20px;
-        font-size: 32px;
-        color: #ffffff;
-    }
-
-    &__list {
-        padding-left: 15px;
-    }
-    &__desc {
-        b {color: inherit}
-        ul li {
-            &:before {
-                display: none;
-                content: '- '
-            }
-        }
-        margin: 60px 0 70px;
-        color: $gray54;
-        .recruit__desc__paragraph {margin: 4px 0 0}
-        .recruit__list {margin: 0 0 18px}
-        .recruit__list li {list-style: none}
-    }
-
-    &__tab {
-        margin: 40px -15px 0;
-    }
-
-    &__header {
-        margin: 70px 0 0;
-        padding: 0 10px;
-    }
-
-    &__header h2 {
-        font-size: 24px;
-        line-height: 1.2em;
-        text-align: center;
-    }
-
-    &__head {
-        margin: 56px 0 -8px 0;
-        font-size: 22px;
-    }
-
-    &__dl {
-        dt {
-            margin-bottom: 20px;
-        }
-        strong {
-            margin-right: 10px;
-        }
-    }
+.recruit .subtitle {
+  text-align: center;
 }
 
-.tab {
-    &__list {
-        position: relative;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
+/* Recruit -- Cover
+-------------------------------------------------- */
 
-    &__item {
-        float: left;
-        width: 25%;
-    }
-
-    &__item__inner {
-        display: block;
-        box-sizing: border-box;
-        height: 50px;
-        border-bottom: 1px solid $rain-500;
-        font-size: 15px;
-        line-height: 50px;
-        transition: background 0.5s;
-    }
-
-    &__item__inner:hover,
-    &__item__inner:focus {
-        text-decoration: none;
-    }
-
-    &__item__inner.on {
-        background: $rain-500;
-        color: $color_white;
-        font-weight: $bold;
-    }
-
-    &__item__inner.on + &__item__content {
-        display: block;
-    }
-
-    &__item__content {
-        display: none;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        text-align: left;
-        ul li {
-            list-style: none;
-            &:before {
-                content: '- '
-            }
-        }
-        ul, p {
-            margin-top: 28px;
-        }
-    }
+.recruit .cover {
+  background: url('/assets/cover_recruit.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@media only screen and (max-width: 600px){
-    .tab__item__content ul, .tab__item__content p {
-        padding: 0;
-    }
-    .tab__item {
-        width: 50%;
-    }
-    .tab__item__content {
-        margin-top: 50px;
-    }
+/* Recruit -- Job
+-------------------------------------------------- */
+
+.job-list {
+  padding: 0;
 }
 
-@media only screen and (min-width:568px){
-    .#{$module} {
-        &__tab {
-            margin: 40px auto 0;
-            max-width: 96.33%;
-        }
-    }
+.job-item {
+  float: left;
+
+  width: calc(50% - 19px);
+  height: 500px;
+  max-height: 74px;
+  margin: 0 19px 19px 0;
+  position: relative;
+  padding: 20px 30px;
+  background: #f5f5f5;
+
+  transition: all 0.5s ease;
+  overflow: auto;
+  @include select-disable;
+
+  @media #{$phone} {
+    width: calc(100% - 20px);
+    margin: 0 10px 19px 10px;
+  }
+
+  & .job-trigger {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  & .job-subtitle,
+  & .job-desc {
+    display: none;
+  }
 }
 
-@media only screen and (min-width:768px){
-    .#{$module} {
-        &__tab {
-            max-width: 82.33%;
-        }
+.job-item.active {
+  width: calc(100% - 19px);
+  max-height: 500px;
 
-        &__header h2 {
-            font-size: 30px;
-        }
+  @media #{$phone} {
+    width: calc(100% - 20px);
+    margin: 0 10px 19px 10px;
+  }
+
+  & .job-trigger {
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+  }
+
+  & .job-subtitle,
+  & .job-desc {
+    display: block;
+  }
+}
+
+.job-trigger {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  transition: all 0.5s ease-in;
+  width: 20px;
+  height: 20px;
+
+  &:before {
+    content: url("/assets/ico_plus.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.job-title {
+  display: block;
+  color: rgba(11, 12, 12, 0.56);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.job-subtitle {
+  margin-top: 40px;
+  color: rgba(11, 12, 12, 0.56);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.job-desc {
+  margin-top: 5px;
+  color: #434444;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Recruit -- Notice
+-------------------------------------------------- */
+
+.notice-table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-top: 1px solid rgba(11, 12, 12, 0.12);
+
+  & .align-left {
+    text-align: left;
+  }
+
+  & .align-right {
+    text-align: right;
+  }
+
+  & tr {
+    cursor: pointer;
+    border-bottom: 1px solid rgba(11, 12, 12, 0.12);
+  }
+
+  & tr:hover > td {
+    background: rgba(0, 0, 0, 0.01);
+  }
+
+  & th, & td {
+    padding: 13px 20px 13px 20px;
+  }
+
+  & th {
+    color: rgba(11, 12, 12, 0.56);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  & td {
+    color: rgba(11, 12, 12, 0.56);
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+.notice-submit {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  padding: 17px;
+
+  color: rgba(11, 12, 12, 0.56);
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.20);
+  box-sizing: border-box;
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.40);
+  }
+
+  & img {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+  }
+
+  & span, & b {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    text-align: right;
+  }
+}
+
+/* Recruit -- Popup
+-------------------------------------------------- */
+
+.popup {
+  display: none;
+
+  position: fixed;
+  left: calc(50% - 400px);
+  top: 10%;
+  z-index: 1060;
+
+  width: 800px;
+  height: 80%;
+  padding: 0;
+
+  background: $color_white;
+
+  @media #{$phone} {
+    width: 90%;
+    left: 5%;
+  }
+
+  &-title {
+    width: 100%;
+    padding: 18px 40px;
+    border-bottom: 1px solid rgba(11, 12, 12, 0.12);
+
+    color: $rain-new;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &-close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+
+    &:before {
+      content: url('/assets/ico_plus.png');
     }
+  }
+
+  &-content {
+    width: 100%;
+    height: calc(100% - 71px);
+
+    padding: 40px;
+    overflow-y: scroll;
+
+    & h4 {
+      margin: 0 0 10px 0;
+
+      color: rgba(11, 12, 12, 0.56);
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    & ul {
+      padding: 0;
+      margin: 0 0 35px 0;
+    }
+
+    & li {
+      margin: 0 0 5px 0;
+
+      color: #686868;
+      font-size: 17px;
+      font-weight: 300;
+    }
+  }
+}
+
+.popup.on {
+  display: block;
+}
+
+
+/* Recruit -- Dim
+-------------------------------------------------- */
+
+.dim {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1050;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.34);
+}
+
+.dim.on {
+  display: block;
 }

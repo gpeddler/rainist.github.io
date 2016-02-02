@@ -14,7 +14,9 @@ br {
     display: none;
   }
 }
-
+img {
+    vertical-align: top;
+}
 ul li {
   list-style: none;
 }
@@ -25,6 +27,7 @@ a {
   transition: color 0.5s;
 
   &:hover, &:focus {
+    text-decoration: none;
     color: $rain-700;
   }
 }

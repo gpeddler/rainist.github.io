@@ -1,19 +1,28 @@
 .navbar-default {
+  background: none;
   border: none;
+  border-bottom: 1px solid $color_white;
+  transition: all 0.5s ease-in;
 
   .navbar-nav {
-        & > li {
-            & > a {
-                padding-top: 24px;
-                padding-bottom: 28px;
-                color:rgba(11, 12, 12, 0.34);
-            }
-        }
+    & > li {
+      & > a {
+        padding-top: 24px;
+        padding-bottom: 28px;
+        color:rgba(255, 255, 255, 0.73);
+      }
+
+      & > a:hover {
+        color: $color_white;
+      }
+    }
 
     & > .active > a,
     & > .active > a:hover{
-      color: #0091cc;
+      padding-bottom: 25px;
+      color: $color_white;
       font-weight: bold;
+      border-bottom: 3px solid $color_white;
     }
   }
 
@@ -32,23 +41,94 @@
       background-color: white;
     }
   }
-}
 
+  &.colored {
+    background: $color_white;
+    border-bottom: 1px solid rgba(11, 12, 12, 0.12);
+
+    & .brand-normal {
+      display: none;
+    }
+
+    & .brand-colored {
+      display: block;
+    }
+
+    & .navbar-nav a {
+      color: $rain-400;
+    }
+
+    & .navbar-nav a:hover {
+      color: $rain-new;
+    }
+
+    & .navbar-nav > .active a {
+      color: $rain-new;
+      border-bottom: 3px solid $rain-new;
+    }
+
+    & .icon-bar {
+      background-color: $rain-new;
+    }
+  }
+}
 
 
 .navbar-collapse {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+
+  @media #{$phone} {
+    display: block;
+    position: fixed;
+    background: $color_white;
+    overflow-y: scroll;
+
+    width: 300px;
+    height: calc(100% - 69px);
+    max-height: none !important;
+    top: 69px;
+    right: -300px;
+    border-left: 1px solid rgba(11, 12, 12, 0.12);
+
+    transition: all 0.5s ease;
+
+    &.active {
+      right: 0px;
+    }
+
+    & .navbar-nav {
+      width: 100%;
+      margin: 0;
+    }
+
+    & .navbar-nav a {
+      color: rgba(11, 12, 12, 0.34) !important;
+    }
+
+    & .navbar-nav a:hover {
+      color: rgba(11, 12, 12, 0.56) !important;
+    }
+
+    & .navbar-nav > .active a {
+      color: rgba(11, 12, 12, 0.56) !important;
+      border-bottom: none !important;
+    }
+  }
 }
 
 .navbar-brand {
     height: 24px;
     padding: 24px 15px;
-}
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #0091cc;
+    & .brand-normal {
+      display: block;
+    }
+
+    & .brand-colored {
+      display: none;
+    }
 }
 
 .navbar-brand > img {

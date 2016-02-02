@@ -1,0 +1,200 @@
+$module: 'banksalad';
+
+.#{$module}__wrap {
+    padding: 88px 0 72px;
+}
+
+.#{$module} {
+    .container {
+        height: 100%;
+        text-align: center;
+    }
+
+    .container__video {
+        display: none;
+    }
+
+    .container__button {
+        display: inline-block;
+        background-repeat: no-repeat;
+    }
+
+    .container__button--play {
+        position: relative;
+        width: 108px;
+        height: 108px;
+        margin-top: 250px;
+        background: url('/assets/ico_play.png');
+        background-size: 108px 108px;
+    }
+
+    .container__button--play:after {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        margin-top: 72px;
+        color: $color_white;
+        font-size: 20px;
+        text-align: center;
+        content: '영상보기';
+    }
+
+    &.cover {
+        height: 682px;
+        background: url('/assets/cover_banksalad.png') no-repeat center;
+        background-size: cover;
+    }
+
+    &__link {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+        border: 1px solid $rain-new;
+        border-radius: 3px;
+    }
+
+    &__feature {
+        .form-area-dotted {
+            display: block;
+            width: 92px;
+            height: 92px;
+            text-align: center;
+        }
+        .form-icon--data {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        .form-icon--tech {
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+        .form-icon--trust {
+            margin-top: 17px;
+            margin-bottom: 0;
+        }
+        .form-title {
+            font-weight: 300;
+            padding-top: 26px;
+        }
+        .form-desc {
+            font-weight: 400;
+        }
+        .form-title,
+        .form-desc {
+            padding-left: 92px;
+        }
+    }
+    &__feature + .banksalad__feature {
+        margin-top: 84px;
+    }
+    &__feature + .banksalad__service {
+        margin-top: 150px;
+    }
+    &__service__img-wrap {
+        position: relative;
+    }
+    &__service__img {
+        width: 100%;
+    }
+
+    &__service .row + .row {
+        margin-top: 80px;
+    }
+    &__service__title {
+        font-weight: 400;
+        font-size: 16px;
+        color: $rain-new;
+    }
+    &__service__subtitle {
+        font-weight: bold;
+        font-size: 16px;
+        color: rgba(11, 12, 12, 0.34);
+    }
+    &__service__desc {
+        padding-top: 14px;
+        font-weight: 300;
+    }
+    &__service .banksalad__link {
+        display: block;
+        width: 328px;
+        margin-top: 30px;
+    }
+    &__service .banksalad__link--more {
+        background: $gray54;
+        border-color: $gray54;
+        color: $color_white;
+    }
+    &__service .banksalad__link__inner:after {
+        @include triangle-right(8px, 10px, $rain-new);
+        display: inline-block;
+        margin-left: 10px;
+        content: '';
+    }
+    &__service .banksalad__link--more .banksalad__link__inner:after {
+        @include triangle-right(8px, 10px, $color_white);
+    }
+}
+
+.#{$module}__desc-wrap {
+    padding-bottom: 164px;
+    font-weight: 300;
+    font-size: 20px;
+
+    .subtitle {
+        &:before {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $rain-new;
+            width: 72px;
+            height: 1px;
+            content: '';
+        }
+
+        position: relative;
+        padding-top: 40px;
+        font-size: 34px;
+        text-align: left;
+        color: $gray100;
+    }
+
+    .banksalad__desc {
+        margin-top: 40px;
+    }
+
+    .banksalad__link {
+        margin-top: 40px;
+        padding: 10px 90px;
+    }
+}
+
+@media only screen and (max-width:769px){
+    .banksalad__wrap {
+        padding: 30px 0;
+    }
+    .banksalad__feature .form-icon {
+        margin-left: 86px;
+    }
+    .banksalad__feature + .banksalad__service {
+        margin-top: 60px;
+    }
+    .banksalad__desc-wrap {
+        padding-bottom: 80px;
+    }
+    .banksalad__wrap .banksalad__link {
+        display: block;
+        width: auto;
+    }
+    .banksalad__service__img-wrap {
+        padding: 0;
+    }
+    .banksalad__service__desc-wrap {
+        margin-top: 26px;
+    }
+    .banksalad__service + .banksalad__service {
+        margin-top: 56px;
+    }
+}
