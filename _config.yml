@@ -9,13 +9,12 @@ url: "http://rainist.com"
 # Build settings
 markdown: kramdown
 markdown_ext: "md"
-
-# Output
-permalink: pretty
+gems: [jekyll-paginate]
 
 # Pagination
 paginate: 5
-paginate_path: "page/:num/"
+paginate_path: "blog/:num/"
+permalink: "blog/:year/:month/:day/:slug"
 
 # CEO
 ceo: {
