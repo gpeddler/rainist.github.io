@@ -2,50 +2,85 @@
 layout: default
 ---
 
-<div class="entries">
+<div class="blog">
+    <section class="cover">
+        <div class="container">
+            <span class="cover_comment">MAKE, SHARE, ITERATE</span>
+        </div>
+    </section>
+
+    <section class="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12"></div>
+                <div class="col-md-3 col-xs-12">
+                    <input type="text" class="search_input" />
+                    <a href="#" class="search_button">
+                        <img src="/assets/ico_search.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {% for post in paginator.posts %}
-    <section class="entry">
-        <header class="entry__header">
-            <h2 class="entry__title">
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+    <section class="article">
+        <div class="container">
+            {% if post.cover %}
+                <h3 class="article_title cover">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <img src="{{ post.cover }}" />
+                </h3>
+            {% else %}
+                <h3 class="article_title">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h3>
+            {% endif %}
 
-            <p class="entry__meta">
-                Posted on
-                <a class="meta__date">
-                    {{ post.date | date: "%B %-d, %Y" }}
-                </a>
-            </p>
-        </header>
+            <div class="article_info">
+                <span class="article_tag">Design</span>
+                <span class="article_tag">Design</span>
+                <span class="article_tag">Design</span>
+                <span class="article_date">{{ post.date | date: "%B %-d, %Y" }}</span>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12 article_cover">
+                    <p class="article_content">
+                        {{ post.content | markdownify | strip_html | truncatewords:100 }}
+                    </p>
+                </div>
 
-        <div class="entry__description">
-            <p>
-                {{ post.content | markdownify | strip_html | truncatewords:100 }}
-            </p>
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12">
+                    <div class="article_owner">
+                        <img src="/assets/profile_sample.png" />
+                        <span>{{ post.owner }}</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     {% endfor %}
-</div>
 
-<nav>
-    <ul class="pager">
-        {% if paginator.previous_page %}
-        <li class="pager__item pager__item--start">
-            <a href="{{ paginator.previous_page_path }}" rel="prev">
-                <span aria-hidden="true">«</span> Prev
-            </a>
-        </li>
-        {% else %}
-        <li class="pager__item pager__item--start pager__item--disabled"><span aria-hidden="true">«</span> Prev</li>
-        {% endif %}
-        {% if paginator.next_page %}
-        <li class="pager__item pager__item--end">
-            <a href="{{ paginator.next_page_path }}" rel="next">
-                Next <span aria-hidden="true">»</span>
-            </a>
-        </li>
-        {% else %}
-        <li class="pager__item pager__item--end pager__item--disabled">Next <span aria-hidden="true">»</span></li>
-        {% endif %}
-    </ul>
-</nav>
+    <nav class="article_pager">
+        <div class="container">
+            {% if paginator.previous_page %}
+               <a href="{{ paginator.previous_page_path }}" class="acticle_direction prev">
+                 « 이전
+               </a>
+            {% else %}
+               <a class="acticle_direction prev disabled">« 이전</a>
+            {% endif %}
+
+            {% if paginator.next_page %}
+               <a href="{{ paginator.previous_page_path }}" class="acticle_direction next">
+                 다음 »
+               </a>
+            {% else %}
+               <a class="acticle_direction next disabled">다음 »</a>
+            {% endif %}
+        </div>
+    </nav>
+
+</div>
