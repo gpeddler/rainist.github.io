@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<div class="member">
+    <section class="cover">
+        <div class="container">
+            <span class="cover_comment">RAINISTS</span>
+        </div>
+    </section>
+
+    <section class="rainists">
+        <div class="container">
+            <h2 class="title">RAINISTS</h2>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12">
+                    <h3 class="subtitle">
+                        레이니스트는<br/>
+                        잘 먹는 사람들이 다이어트를 시도합니다.
+                    </h3>
+                </div>
+            </div>
+            <hr class="division" />
+        </div>
+    </section>
+
+    {% for team_hash in site.data.members %}
+    {% assign team = team_hash[1] %}
+        <section class="{{ team.title | slugify: 'pretty' }}">
+            <div class="container">
+                <h2 class="title">{{ team.title | upcase }}</h2>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12"></div>
+                    <div class="col-md-10 col-xs-12 form-desc">{{ team.desc }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12"></div>
+                    <div class="col-md-10 col-xs-12">
+                        <ul class="member-list">
+                            {% for member in team.people %}
+                            <li class="member-item">
+                                <a role="button" class="member-trigger"></a>
+                                <div class="member-preview">
+                                    <img class="member-profile small" src="/assets/profile_{{ member.img_key }}_small.png" />
+                                    <img class="member-profile large" src="/assets/profile_{{ member.img_key }}_large.png" />
+                                    <span class="member-name">
+                                        <span>{{ member.name }}<span/>
+                                        <b>{{ member.position }}</b>
+                                    </span>
+                                </div>
+                                <div class="member-desc">
+                                    <p class="desc">
+                                        {{ member.desc }}
+                                    </p>
+                                    <p class="post_script">
+                                        쓰고 있는 카드 : {{ member.card }}<br/>
+                                        보유 상품 : {{ member.product }}
+                                    </p>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endfor %}
+</div>
+
+<script>
+    $('.member-trigger').on('click', function(e) {
+        var target = $($(e.target).parents(".member-item")[0]);
+
+        if (target.hasClass("active")) {
+            target.removeClass("active");
+        } else {
+            target.addClass("active");
+        }
+    });
+</script>

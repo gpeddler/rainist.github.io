@@ -108,11 +108,11 @@
     }
 
     & .navbar-nav a:hover {
-      color: rgba(11, 12, 12, 0.56) !important;
+      color: $rain-500 !important;
     }
 
     & .navbar-nav > .active a {
-      color: rgba(11, 12, 12, 0.56) !important;
+      color: $rain-500 !important;
       border-bottom: none !important;
     }
   }

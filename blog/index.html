@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="entries">
+    {% for post in paginator.posts %}
+    <section class="entry">
+        <header class="entry__header">
+            <h2 class="entry__title">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+
+            <p class="entry__meta">
+                Posted on
+                <a class="meta__date">
+                    {{ post.date | date: "%B %-d, %Y" }}
+                </a>
+            </p>
+        </header>
+
+        <div class="entry__description">
+            <p>
+                {{ post.content | markdownify | strip_html | truncatewords:100 }}
+            </p>
+        </div>
+    </section>
+    {% endfor %}
+</div>
+
+<nav>
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="pager__item pager__item--start">
+            <a href="{{ paginator.previous_page_path }}" rel="prev">
+                <span aria-hidden="true">«</span> Prev
+            </a>
+        </li>
+        {% else %}
+        <li class="pager__item pager__item--start pager__item--disabled"><span aria-hidden="true">«</span> Prev</li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="pager__item pager__item--end">
+            <a href="{{ paginator.next_page_path }}" rel="next">
+                Next <span aria-hidden="true">»</span>
+            </a>
+        </li>
+        {% else %}
+        <li class="pager__item pager__item--end pager__item--disabled">Next <span aria-hidden="true">»</span></li>
+        {% endif %}
+    </ul>
+</nav>

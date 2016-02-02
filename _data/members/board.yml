@@ -1,0 +1,15 @@
+title: board members
+desc: 뱅크샐러드는 카드사에서 제공하는 혜택 정보를 단순히 나열하지 않습니다. 2,400여 개 카드, 13만여 개 이상의 혜택을 직접 수집/분석하여 계산 가능한 형태로 데이터화했습니다.
+people:
+  - name: 김태훈
+    position: 대표이사, CEO
+    desc: 태훈형 ...
+    card: 뭔지 모르는 카드
+    product: 없음
+    img_key: kth
+  - name: 황성현
+    position: 이사, CTO
+    desc: 황싱숭생숭 ...
+    card: 뭔지 모르는 카드
+    product: 없음
+    img_key: hsh

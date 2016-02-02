@@ -32,6 +32,15 @@ a {
   }
 }
 
+.link-grey {
+  color: rgba(11, 12, 12, 0.56);
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $rain-500;
+  }
+}
+
 // Bootstrap Specific Reset Styles
 
 body > .container {
