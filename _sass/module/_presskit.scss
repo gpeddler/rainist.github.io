@@ -17,7 +17,7 @@
 
 .release-list {
   padding: 0;
-  margin-bottom: 95px;
+  margin-bottom: 36px;
   border-top: 1px solid rgba(11, 12, 12, 0.12);
 }
 
@@ -32,7 +32,7 @@
   display: block;
   float: left;
 
-  width: 100px;
+  width: 160px;
   color: rgba(11, 12, 12, 0.12);
   font-size: 20px;
   font-weight: bold;
@@ -50,6 +50,26 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.press__paginator {
+    overflow: hidden;
+    padding: 0 12px;
+    margin-bottom: 59px;
+
+    a {
+        color: rgba(11, 12, 12, 0.34);
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    &__previous {
+        float: left;
+    }
+
+    &__next {
+        float: right;
+    }
 }
 
 /* Presskit -- Info

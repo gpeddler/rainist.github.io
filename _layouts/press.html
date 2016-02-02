@@ -13,16 +13,7 @@ layout: default
           <div class="row">
               <div class="col-md-8 col-xs-12">
                   <h2 class="title">PRESS RELEASES</h2>
-
-                  <ul class="release-list">
-                      {% for item in site.news %}
-                          <li class="release-item">
-                              <span class="release-media">{{ item.media }}</span>
-                              <span class="release-date">{{ item.date }}</span>
-                              <a target="_blank" href="{{ item.url }}" class="release-link">{{ item.title }}</a>
-                          </li>
-                      {% endfor %}
-                  </ul>
+                  {{ content }}
               </div>
               <div class="col-md-4 col-xs-12">
                   <h2 class="title">INFO</h2>

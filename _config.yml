@@ -13,26 +13,8 @@ paginate: 5
 paginate_path: "blog/:num/"
 permalink: "blog/:year/:month/:day/:slug"
 
-# Press kit
 presskit: "/assets/rainist_presskit.pdf"
 
-# News
-news: [
-    {
-        url: "http://m.news.naver.com/read.nhn?mode=LSD&mid=sec&sid1=004&oid=009&aid=0003671619",
-        title: "김태훈 뱅크샐러드 대표 | 대형 카드사·은행이 먼저 찾아가는 ‘핀테크 청년’…“1년에 100만원씩 세이브해주는 앱(App) 완성하겠습니다”",
-        media: "매일경제",
-        date: "2016.01.22"
-    },
-    {
-        url: "http://m.news.naver.com/read.nhn?mode=LSD&mid=sec&sid1=004&oid=009&aid=0003671619",
-        title: "김태훈 뱅크샐러드 대표 | 대형 카드사·은행이 먼저 찾아가는 ‘핀테크 청년’…“1년에 100만원씩 세이브해주는 앱(App) 완성하겠습니다”",
-        media: "매일경제",
-        date: "2016.01.22"
-    }
-]
-
-# Recruit
 recruit: [
     {
         title: "뱅크샐러드 앱개발자 모집",

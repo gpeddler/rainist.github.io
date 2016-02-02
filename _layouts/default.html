@@ -52,14 +52,17 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="/" class="navbar-brand">
-                    <img class="brand-normal" src="../assets/logo_rainist.png" alt="로고" />
-                    <img class="brand-colored" src="../assets/logo_rainist-blue.png" alt="로고" />
+                    <img class="brand-normal" src="/assets/logo_rainist.png" alt="로고" />
+                    <img class="brand-colored" src="/assets/logo_rainist-blue.png" alt="로고" />
                 </a>
             </div>
             <nav id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li {% if page.url == '/' %} class="active" {% endif %}>
+                        <a href='/'>회사 소개</a>
+                    </li>
                     {% for item in site.data.nav %}
-                    <li {% if page.url == item.url %} class="active" {% endif %}>
+                    <li {% if page.url contains item.url %} class="active" {% endif %}>
                         <a href={{ item.url }}>{{ item.name }}</a>
                     </li>
                     {% endfor %}
