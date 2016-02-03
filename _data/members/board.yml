@@ -1,15 +1,15 @@
 title: board members
-desc: 뱅크샐러드는 카드사에서 제공하는 혜택 정보를 단순히 나열하지 않습니다. 2,400여 개 카드, 13만여 개 이상의 혜택을 직접 수집/분석하여 계산 가능한 형태로 데이터화했습니다.
+desc: 이사회 설명
 people:
   - name: 김태훈
     position: 대표이사, CEO
     email: ceo@rainist.com
-    desc: 태훈형 ...
-    card: 뭔지 모르는 카드
-    product: 없음
+    desc: 태훈 설명
+    card: 태훈 카드
+    product: 태훈 상품
   - name: 황성현
     position: 이사, CTO
     email: sunghyunzz@rainist.com
-    desc: 황싱숭생숭 ...
-    card: 뭔지 모르는 카드
-    product: 없음
+    desc: 성현 설명
+    card: 성현 카드
+    product: 성현 상품

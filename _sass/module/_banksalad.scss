@@ -163,6 +163,19 @@ $module: 'banksalad';
 
     .banksalad__desc {
         margin-top: 40px;
+        max-width: 870px;
+
+        @media #{$tablet} {
+            br {
+                display: none;
+            }
+        }
+
+        @media #{$phone} {
+            br {
+                display: none;
+            }
+        }
     }
 
     .banksalad__link {
