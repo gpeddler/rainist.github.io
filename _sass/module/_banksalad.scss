@@ -1,7 +1,7 @@
 $module: 'banksalad';
 
 .#{$module}__wrap {
-    padding: 88px 0 72px;
+    padding: 0 0 72px;
 }
 
 .#{$module} {
@@ -47,57 +47,45 @@ $module: 'banksalad';
         background-size: cover;
     }
 
-    &__link {
-        display: inline-block;
+    &__link__inner {
+        display: block;
         text-align: center;
-        padding: 10px 0;
+        padding: 10px 50px;
         border: 1px solid $rain-new;
         border-radius: 3px;
     }
 
     &__feature {
-        .form-area-dotted {
-            display: block;
-            width: 92px;
-            height: 92px;
-            text-align: center;
-        }
+        padding: 0 0 60px;
+
         .form-icon--data {
             width: 92px;
             height: 92px;
             margin-top: 15px;
             margin-bottom: 0;
         }
+
         .form-icon--tech {
             width: 92px;
             height: 92px;
             margin-top: 8px;
             margin-bottom: 0;
         }
+
         .form-icon--trust {
             width: 92px;
             height: 92px;
             margin-top: 17px;
             margin-bottom: 0;
         }
-        .form-title {
-            font-weight: 300;
-            padding-top: 26px;
-        }
-        .form-desc {
-            font-weight: 400;
-        }
-        .form-title,
-        .form-desc {
-            padding-left: 92px;
-        }
+
     }
-    &__feature + .banksalad__feature {
-        margin-top: 84px;
-    }
+
     &__feature + .banksalad__service {
-        margin-top: 150px;
+        padding: 80px 0 0;
+        border-top: 1px solid rgba(11, 12, 12, 0.12);
     }
+
     &__service__img-wrap {
         position: relative;
     }
@@ -109,9 +97,10 @@ $module: 'banksalad';
         margin-top: 80px;
     }
     &__service__title {
+        display: inline-block;
+        margin: 40px 0 0;
         font-weight: 400;
-        font-size: 16px;
-        color: $rain-new;
+        font-size: 20px;
     }
     &__service__subtitle {
         font-weight: bold;
@@ -121,17 +110,24 @@ $module: 'banksalad';
     &__service__desc {
         padding-top: 14px;
         font-weight: 300;
+        color: rgba(11, 12, 12, 0.56);
     }
+
     &__service .banksalad__link {
         display: block;
-        width: 328px;
         margin-top: 30px;
+        padding: 0;
     }
-    &__service .banksalad__link--more {
+
+    &__service .banksalad__link--more .banksalad__link__inner {
+        display: block;
+        height: 100%;
+        margin: 0 0 0 8px;
         background: $gray54;
         border-color: $gray54;
         color: $color_white;
     }
+
     &__service .banksalad__link__inner:after {
         @include triangle-right(8px, 10px, $rain-new);
         display: inline-block;
@@ -144,7 +140,6 @@ $module: 'banksalad';
 }
 
 .#{$module}__desc-wrap {
-    padding-bottom: 164px;
     font-weight: 300;
     font-size: 20px;
 
@@ -168,7 +163,7 @@ $module: 'banksalad';
     }
 
     .banksalad__desc {
-        margin-top: 40px;
+        margin: 40px 0 0;
         max-width: 870px;
 
         @media #{$tablet} {
@@ -185,21 +180,37 @@ $module: 'banksalad';
     }
 
     .banksalad__link {
+        display: inline-block;
         margin-top: 40px;
-        padding: 10px 90px;
+        padding: 0;
     }
 }
 
 @media only screen and (max-width:769px){
     .banksalad__wrap {
-        padding: 30px 0;
+        padding: 30px 0 0;
+        .title {
+            margin-bottom: 40px;
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
-    .banksalad__feature .form-icon {
-        margin-left: 86px;
-    }
-    .banksalad__feature + .banksalad__service {
+
+    .banksalad__service .row {
         margin-top: 60px;
     }
+
+    .banksalad__service__title {
+        margin: 0;
+    }
+
+    .banksalad__feature + .banksalad__service {
+        margin-top: 0;
+        padding: 38px 0 0;
+    }
+
     .banksalad__desc-wrap {
         padding-bottom: 80px;
     }
@@ -212,8 +223,15 @@ $module: 'banksalad';
     }
     .banksalad__service__desc-wrap {
         margin-top: 26px;
+        padding: 0;
     }
     .banksalad__service + .banksalad__service {
         margin-top: 56px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .banksalad__service .banksalad__link--more .banksalad__link__inner {
+        margin: 0;
     }
 }
