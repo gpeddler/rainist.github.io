@@ -5,7 +5,9 @@ layout: default
 <div class="blog-content">
     <section class="cover">
         {% if page.cover %}
-            <img src="{{ page.cover }}" class="substance_cover">
+            <img src="{{ page.cover }}" class="substance_cover" alt="{{ page.title }}">
+        {% else %}
+            <img src="/assets/img_default_blog_cover.png" class="substance_cover" alt="{{ page.title }}">
         {% endif %}
         <div class="container">
             <span class="cover_comment">{{ page.title }}</span>
@@ -35,7 +37,8 @@ layout: default
             <div class="row container-sub">
                 <div class="article_owner">
                     <img src="/assets/profile/{{ page.email }}_small.png" alt="{{ page.author }}" />
-                    <a href="mailto:{{ page.email }}"><span>{{ page.author }}</span></a>
+                    <span>{{ page.author }} | {{ page.position | downcase }}</span>
+                    <a href="mailto:{{ page.email }}">{{ page.email }}</a>
                 </div>
             </div>
 

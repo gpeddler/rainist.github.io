@@ -60,12 +60,14 @@ section.grey {
 
 .form {
   &-icon {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
+    width: 85px;
+    height: 85px;
   }
 
   &-title {
     color: rgba(11, 12, 12, 0.77);
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
     margin-bottom: 19px;
     line-height: 1.5;

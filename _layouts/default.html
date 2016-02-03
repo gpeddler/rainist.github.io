@@ -26,7 +26,11 @@
     <meta name="description" content="{{ site.description }}">
     {% endif %}
 
+    {% if page.cover %}
+    <meta property="og:image" content="{{ site.url }}{{ page.cover }}">
+    {% else %}
     <meta property="og:image" content="http://cdn.banksalad.com/og/rainist_site_thumbnail.png">
+    {% endif %}
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">

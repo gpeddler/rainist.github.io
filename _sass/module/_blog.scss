@@ -172,12 +172,20 @@
 
   & span {
     display: block;
-    float: left;
 
     color: rgba(11, 12, 12, 0.56);
     font-size: 16px;
 
-    padding: 12px 0 12px 30px;
+    padding: 2px 0 3px 66px;
+  }
+
+  & a {
+      display: block;
+
+      color: rgba(11, 12, 12, 0.34);
+      font-size: 12px;
+
+      padding: 0 0 1px 67px;
   }
 }
 
@@ -214,7 +222,6 @@
 .blog-content .cover {
   position: relative;
   padding: 0;
-  background: $rain-new;
   overflow: hidden;
 }
 
