@@ -1,7 +1,7 @@
 import os
 import shutil
 
-ITEM_PER_PAGE = 10
+ITEM_PER_PAGE = 8
 PAGE_OFFSET = 1
 
 DATE, MEDIA, URL, TITLE = 0, 1, 2, 3
@@ -24,6 +24,7 @@ for i in range(PAGE_OFFSET, number_of_total_pages + PAGE_OFFSET):
     outputs = [
         '---',
         'layout: press',
+        'title: 보도자료',
         '---',
         '<ul class="release-list">',
     ]
@@ -51,7 +52,7 @@ for i in range(PAGE_OFFSET, number_of_total_pages + PAGE_OFFSET):
         url = '/press/' + str(i + 1)
         outputs.append('\t<li class="press__paginator__next"><a href="%s">다음 <span aria-hidden="true">&gt;</span></a></li>' % url)
 
-    outputs.append('</ul>')
+    outputs.extend(['</ul>', ''])
 
     file_name = 'press/' + str(i) + '/index.html'
     os.makedirs(os.path.dirname(file_name), exist_ok=True)

@@ -117,23 +117,13 @@
   display: block;
   float: right;
 
-  padding: 5px;
+  padding: 4px;
   margin-left: 4px;
 
   color: rgba(11, 12, 12, 0.56);
-  border: 1px solid rgba(11, 12, 12, 0.34);
-  border-radius: 3px;
 
-  &.twitter {
-    padding: 5px 3px;
-  }
-
-  &.facebook {
-    padding: 5px 10px;
-  }
-
-  &.text {
-    padding: 5px 15px;
+  &.fa-twitter {
+      margin-left: 9px;
   }
 }
 

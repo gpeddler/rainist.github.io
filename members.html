@@ -1,5 +1,6 @@
 ---
 layout: default
+title: 멤버
 ---
 <div class="member">
     <section class="cover">
@@ -41,8 +42,8 @@ layout: default
                             <li class="member-item">
                                 <a role="button" class="member-trigger"></a>
                                 <div class="member-preview">
-                                    <img class="member-profile small" src="/assets/profile/{{ member.img_key }}_small.png" />
-                                    <img class="member-profile large" src="/assets/profile/{{ member.img_key }}_large.png" />
+                                    <img class="member-profile small" src="/assets/profile/{{ member.email }}_small.png" alt="{{ member.name }}"/>
+                                    <img class="member-profile large" src="/assets/profile/{{ member.email }}_large.png" alt="{{ member.name }}"/>
                                     <span class="member-name">
                                         <span>{{ member.name }}<span/>
                                         <b>{{ member.position }}</b>

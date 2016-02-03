@@ -3,11 +3,13 @@ desc: 뱅크샐러드는 카드사에서 제공하는 혜택 정보를 단순히
 people:
   - name: 김태훈
     position: 대표이사, CEO
+    email: ceo@rainist.com
     desc: 태훈형 ...
     card: 뭔지 모르는 카드
     product: 없음
   - name: 황성현
     position: 이사, CTO
+    email: sunghyunzz@rainist.com
     desc: 황싱숭생숭 ...
     card: 뭔지 모르는 카드
     product: 없음

@@ -1,25 +1,12 @@
 ---
 layout: default
+title: 블로그
 ---
 
 <div class="blog">
     <section class="cover">
         <div class="container">
             <span class="cover_comment">MAKE, SHARE, ITERATE</span>
-        </div>
-    </section>
-
-    <section class="search">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-xs-12"></div>
-                <div class="col-md-3 col-xs-12">
-                    <input type="text" class="search_input" />
-                    <a href="#" class="search_button">
-                        <img src="/assets/ico_search.png" />
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -38,10 +25,12 @@ layout: default
             {% endif %}
 
             <div class="article_info">
-                <span class="article_tag">Design</span>
-                <span class="article_tag">Design</span>
-                <span class="article_tag">Design</span>
-                <span class="article_date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                {% if post.tags.size > 0 %}
+                    {% for tag in post.tags %}
+                        <span class="article_tag">{{ tag | downcase }}</span>
+                    {% endfor %}
+                {% endif %}
+                <time datetime="{{ post.date | date: "%F" }}" class="article_date">{{ post.date | date: "%B %-d, %Y" }}</time>
             </div>
             <div class="row">
                 <div class="col-md-2 col-xs-12"></div>
@@ -54,8 +43,8 @@ layout: default
                 <div class="col-md-2 col-xs-12"></div>
                 <div class="col-md-10 col-xs-12">
                     <div class="article_owner">
-                        <img src="/assets/profile_sample.png" />
-                        <span>{{ post.owner }}</span>
+                        <img src="/assets/profile/{{ post.email }}_small.png" alt="{{ post.author }}" />
+                        <a href="mailto:{{ post.email }}"><span>{{ post.author }}</span></a>
                     </div>
                 </div>
             </div>

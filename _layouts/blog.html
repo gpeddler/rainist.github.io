@@ -16,12 +16,14 @@ layout: default
         <div class="container">
             <div class="substance_header">
                 <div class="substance-50">
-                    <span class="article_tag">Design</span>
-                    <span class="article_tag">Design</span>
-                    <span class="article_tag">Design</span>
+                    {% if page.tags.size > 0 %}
+                        {% for tag in page.tags %}
+                            <span class="article_tag">{{ tag | downcase }}</span>
+                        {% endfor %}
+                    {% endif %}
                 </div>
                 <div class="substance-50 substance_right">
-                    <span class="article_date">{{ page.date | date: "%B %-d, %Y" }}</span>
+                    <time datetime="{{ post.date | date: "%F" }}" class="article_date">{{ page.date | date: "%B %-d, %Y" }}</time>
                 </div>
             </div>
             <hr class="division" />
@@ -32,36 +34,28 @@ layout: default
 
             <div class="row container-sub">
                 <div class="article_owner">
-                    <img src="/assets/profile_sample.png" />
-                    <span>{{ page.owner }}</span>
+                    <img src="/assets/profile/{{ page.email }}_small.png" alt="{{ page.author }}" />
+                    <a href="mailto:{{ page.email }}"><span>{{ page.author }}</span></a>
                 </div>
             </div>
 
             <div class="substance_footer">
                 <div class="substance-50">
-                    <span class="article_tag">Design</span>
-                    <span class="article_tag">Design</span>
-                    <span class="article_tag">Design</span>
+                    {% if page.tags.size > 0 %}
+                        {% for tag in page.tags %}
+                            <span class="article_tag">{{ tag | downcase }}</span>
+                        {% endfor %}
+                    {% endif %}
                 </div>
                 <div class="substance-50 substance_right">
-                    <a href="#" class="article_link text">copy link</a>
-                    <a href="#" class="article_link facebook"><img src="/assets/ico_link_facebook.png"/></a>
-                    <a href="#" class="article_link twitter"><img src="/assets/ico_link_twitter.png"/></a>
+                    <a href="https://twitter.com/share?url={{ page.url | prepend: site.url }}"
+                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                        target="_blank"><i class="fa fa-2x fa-twitter article_link"></i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}&t={{ page.title }}"
+                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                        target="_blank"><i class="fa fa-2x fa-facebook-official article_link"></i></a>
                 </div>
             </div>
         </div>
     </section>
-
-    <nav class="substance_pager">
-        <div class="container">
-            <a href="#" class="substance_direction prev">
-                <span>Prev</span>
-                <span>스타트업이 꼭 봐야할 지표</span>
-            </a>
-            <a href="#" class="substance_direction next">
-                <span>Next</span>
-                <span>스타트업이 꼭 봐야할 지표</span>
-            </a>
-        </div>
-    </nav>
 </div>
