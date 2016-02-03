@@ -1,15 +1,27 @@
 title: financial analysis
-desc: 금융 분석팀 설명
+desc: 금융 분석팀은 도메인의 이해를 통해 문제를 해결하는 사람들입니다. 금융상품의 원리를 파악하며, 각 금융상품에서 발생하는 문제들을 포착하고 해결방안을 도출합니다.
 people:
-  - name: 김태훈
-    position: 대표이사, CEO
-    email: ceo@rainist.com
-    desc: 태훈형 ...
-    card: 뭔지 모르는 카드
-    product: 없음
-  - name: 황성현
-    position: 이사, CTO
-    email: sunghyunzz@rainist.com
-    desc: 황싱숭생숭 ...
-    card: 뭔지 모르는 카드
-    product: 없음
+    - name: 박규인
+      position: Lead Business Developer
+      email: gragpark@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 김광훈
+      position: Business Developer
+      email: coo@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 김찬호
+      position: Business Developer
+      email: kimchanho@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 임소현
+      position: Business Developer
+      email: dsmind@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
