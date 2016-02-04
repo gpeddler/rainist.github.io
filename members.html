@@ -25,7 +25,8 @@ title: 구성원
         </div>
     </section>
 
-    {% for team_hash in site.data.team %}
+    {% assign teams = site.data.team %}
+    {% for team_hash in teams %}
     {% assign team = team_hash[1] %}
         <section class="{{ team.title | slugify: 'pretty' }}">
             <div class="container">
