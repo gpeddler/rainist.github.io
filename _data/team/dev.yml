@@ -1,51 +1,15 @@
 title: products development
 desc: 제품 개발팀은 제품을 통해 문제를 해결하는 사람들입니다. 디자이너, 엔지니어, 마케터가 모두 모여 각자의 도메인에서 중요한 문제를 찾고 해결점을 만들어냅니다.
 people:
-    - name: 서자영
-      position: CDO
-      email: jayoung@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
-    - name: 김여민
-      position: CMO
-      email: yeomin@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
-    - name: 박지수
-      position: UX.UI Designer
-      email: jisu@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
-    - name: 조욱진
-      position: Marketer
-      email: cho.ookjin@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
-    - name: 황이슬
-      position: UX.UI Designer
-      email: dew@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
-    - name: 권수진
-      position: Marketer
-      email: sujin@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
+    - name: 황성현
+      position: CTO
+      email: sunghyunzz@rainist.com
+      desc: 성현 설명
+      card: 성현 카드
+      product: 성현 상품
     - name: 전인아
       position: Data Scientist
       email: inahjeon@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
-    - name: 안성원
-      position: Marketer
-      email: sungwon@rainist.com
       desc: ...
       card: 뭔지 모르는 카드
       product: 없음
@@ -64,6 +28,48 @@ people:
     - name: 정유진
       position: Software Engineer
       email: gpeddler@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 서자영
+      position: CDO
+      email: jayoung@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 박지수
+      position: UX.UI Designer
+      email: jisu@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 황이슬
+      position: UX.UI Designer
+      email: dew@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 김여민
+      position: CMO
+      email: yeomin@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 조욱진
+      position: Marketer
+      email: cho.ookjin@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 권수진
+      position: Marketer
+      email: sujin@rainist.com
+      desc: ...
+      card: 뭔지 모르는 카드
+      product: 없음
+    - name: 안성원
+      position: Marketer
+      email: sungwon@rainist.com
       desc: ...
       card: 뭔지 모르는 카드
       product: 없음

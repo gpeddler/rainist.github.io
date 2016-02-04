@@ -1,4 +1,4 @@
-title: board members
+title: ceo
 desc: 레이니스트는 정보 비대칭성의 문제를 더 잘 해결하기 위해 측정하고, 검증하고, 회고하는 사람들입니다. 항상 더 나은 방법이 있다고 믿으며, 최선을 찾기 위해 노력하는 사람들입니다.
 people:
   - name: 김태훈
@@ -7,9 +7,3 @@ people:
     desc: 태훈 설명
     card: 태훈 카드
     product: 태훈 상품
-  - name: 황성현
-    position: CTO
-    email: sunghyunzz@rainist.com
-    desc: 성현 설명
-    card: 성현 카드
-    product: 성현 상품
