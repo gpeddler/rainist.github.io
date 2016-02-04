@@ -23,8 +23,6 @@
   float: left;
 
   width: calc(50% - 19px);
-  height: 500px;
-  max-height: 74px;
   margin: 0 19px 19px 0;
   position: relative;
   padding: 20px 30px;
@@ -52,7 +50,6 @@
 
 .job-item.active {
   width: calc(100% - 19px);
-  max-height: 500px;
 
   @media #{$phone} {
     width: calc(100% - 20px);
@@ -67,7 +64,24 @@
   & .job-subtitle,
   & .job-desc {
     display: block;
+    overflow: hidden;
+    margin: 0;
+
+    li {
+        margin-top: 24px;
+    }
   }
+
+  & .job-subdesc {
+    padding: 0 0 0 40px;
+    margin: 16px 0 0 0;
+  }
+
+  & .job-subtitle {
+    color: $rain-500;
+    margin: 32px 0 0 0;
+  }
+
 }
 
 .job-trigger {
@@ -91,6 +105,7 @@
   color: rgba(11, 12, 12, 0.56);
   font-size: 24px;
   font-weight: 300;
+  margin: 0;
 }
 
 .job-subtitle {
@@ -280,4 +295,16 @@
 
 .dim.on {
   display: block;
+}
+
+.recruit__position__row {
+  p, ul {
+    margin-bottom: 36px;
+  }
+
+  li {
+    font-size: 14px;
+    font-weight: inherit;
+    color: inherit;
+  }
 }

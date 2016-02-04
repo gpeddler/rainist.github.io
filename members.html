@@ -5,7 +5,7 @@ title: 구성원
 <div class="member">
     <section class="cover">
         <div class="container">
-            <span class="cover_comment">RAINISTS</span>
+            <span class="cover_comment">RAINIST</span>
         </div>
     </section>
 
@@ -40,23 +40,12 @@ title: 구성원
                         <ul class="member-list">
                             {% for member in team.people %}
                             <li class="member-item">
-                                <a role="button" class="member-trigger"></a>
                                 <div class="member-preview">
                                     <img class="member-profile small" src="/assets/profile/{{ member.email }}_small.png" alt="{{ member.name }}"/>
-                                    <img class="member-profile large" src="/assets/profile/{{ member.email }}_large.png" alt="{{ member.name }}"/>
                                     <span class="member-name">
                                         <span>{{ member.name }}<span/>
                                         <b>{{ member.position }}</b>
                                     </span>
-                                </div>
-                                <div class="member-desc">
-                                    <p class="desc">
-                                        {{ member.desc }}
-                                    </p>
-                                    <p class="post_script">
-                                        쓰고 있는 카드 : {{ member.card }}<br/>
-                                        보유 상품 : {{ member.product }}
-                                    </p>
                                 </div>
                             </li>
                             {% endfor %}
