@@ -4,72 +4,72 @@ people:
     - name: 황성현
       position: CTO
       email: sunghyunzz@rainist.com
-      desc: 성현 설명
-      card: 성현 카드
-      product: 성현 상품
+      desc: 황성현님은 평소 온화하시지만, 개발이나 전략 이야기를 할 때에는 소름 돋는 천재로 변신합니다. 대신 신은 그에게 재능을 주고 생활력을 빼앗았습니다. 인생을 개발에 오롯이 바친 나머지 이케아 서랍장 하나 조립할 줄 모릅니다. 영화 매니아로 팀원들과 소통하고자 슬랙에 영화 채널을 뚫었지만 혼자 있습니다. 다 나가주세요.
+      card: 아시아나 삼성 애니패스 플래티늄
+      product: 없음
     - name: 전인아
       position: Data Scientist
       email: inahjeon@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
+      desc: 전인아님은 인생에서 단 한 번도 주량으로 져본 없었지만, 입사도 하기 전 만취 상태로 사무실에 잠입하여 박미륵님의 핸드폰을 훔쳤습니다. 2016년 소망으로 필름이 끊기지 않겠다 다짐했습니다. ‘그럴 수 있어’라는 말을 좋아합니다. 우리 모두 인아님이 필름이 끊겨도 ‘그럴 수 있다’고 해주기로 했습니다.
+      card: 신한 삑
       product: 없음
     - name: 변재원
       position: Software Engineer
       email: astroplex@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
+      desc: 변재원님의 문장에는 정확한 주어 동사 목적어가 하나도 없습니다. 저기 그거, 그렇게 하면 되나요? 식의 철학적인 문장을 즐깁니다. 그와 대화를 나누려면 전문 번역가 박지수님이 참관해야 합니다. 남들이 문장을 갖추어 말하면 매우 감탄합니다. 사무실에 샤오미 TV를 전파한 해외 직구 매니아입니다.
+      card: 신한 Hi-Point
       product: 없음
     - name: 박미륵
       position: Software Engineer
       email: mireuk@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
+      desc: 박미륵님은 개발하며 노래 부르기를 좋아합니다. 그가 싱잉 아웃 라우드 할 수 있도록 코워킹 스페이스에서 단독 사무실로 빠르게 이사했습니다. (창피해서 그런 건 아닙니다.) 사무실 이사 후로 마음껏 노래하고 있는데, 그의 인생 최고의 곡은 빅뱅의 뱅뱅뱅입니다. 조카를 너무 사랑한 나머지 자리에 사진을 도배해놓아 신규 입사자들에게 유부남으로 오해를 사고 있습니다.
+      card: NEW 우리 V / KDB 체크
+      product: IBK 흔들어 적금 / KDB Hi 재형저축 / 하나은행 주택청약종합저축
     - name: 정유진
       position: Software Engineer
       email: gpeddler@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
+      desc: 정유진님은 레이니스트 공식 상류층입니다. 출퇴근 10분 시대를 꿈꾸며 언주역 소재 고급 오피스텔로 이사했으나 월세를 감당하지 못하고 회사에서 라면을 먹으며 숙식하고 있습니다. 이 시끌벅적한 회사에서 가장 과묵한 사람 중 한 명으로, 카레 라면을 좋아합니다.
+      card: 채움 NEW 농촌사랑 체크
       product: 없음
     - name: 서자영
       position: CDO
       email: jayoung@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
+      desc: 서자영님은 들어봐 들어봐, 황성현 황성현 등 두 번 연속 빠르게 말하기를 즐깁니다. 그 뒤로 이어지는 이야기는 대부분 새로운 결심입니다. 올해 벌써 운동과 코세라 수강, 오너드라이버 되기 등을 결심했으나 진척률은 들어본 바가 없습니다. 큰 눈을 껌뻑이며 음주하기를 좋아합니다.
+      card: 삼성 CJ ONE / 하나 해피포인트 체크
       product: 없음
     - name: 박지수
       position: UX.UI Designer
       email: jisu@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
+      desc: 박지수님은 상남자입니다. 지푸라기 같은 마른 몸에서 발산되는 과도한 남성호르몬이 걱정입니다. 어머니가 긴급 처방으로 사주신 분홍색 패딩으로 겨우겨우 여자 행세를 하고 있습니다. 25년 동안 울산 사투리를 고치기 위해 필사적으로 노력했지만 대표이사를 필두로 경상도 비율이 50%인 회사에 잘못 입사했습니다.
+      card: 외환 2X 알파 / NEW 우리 V
+      product: 우리은행 우리웰리치100적금
     - name: 황이슬
       position: UX.UI Designer
       email: dew@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
+      desc: 황이슬님은 악마입니다. 엄청난 열정으로 인턴십 기간 동안 최고의 UX 디자이너로 찬사를 받았으나 정규직 전환과 동시에 큰 눈을 사이코패스처럼 번뜩이는 악마로 돌변했습니다. 특기는 타인의 가장 소중한 것을 파괴하는 일로, 슬랙으로 이모티콘 협박 메시지 발송을 즐깁니다. 레이니스트 채용에 인적성 단계 도입이 시급합니다.
+      card: KB 해피 nori 체크 / KB FINETECH (Basic 할인형)
+      product: 국민은행 Smart★폰 적금 / KDB Hi 재형저축
     - name: 김여민
       position: CMO
       email: yeomin@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
+      desc: 김여민님은 분노의 마케터입니다. 그녀의 분노를 사는 것들은 일을 빠릿빠릿하게 하지 못하는 것이나, 정리되지 않는 엑셀, 레이아웃이 안 맞는 피티 등으로 그녀의 손에 들어가면 칼 엑셀, 칼 피티로 돌아옵니다.  하지만 가끔 그녀가 다급하게 이어폰을 찾는 소리를 들을 수 있는데 남자친구에게 전화가 오면 주변 사람은 안중에도 없다는 듯이 여성스러운 목소리를 냅니다. 그 어느 분노보다 그때가 제일 무섭습니다. 남자친구가 이 글을 보지 않았으면 좋겠습니다.
+      card: 외환 2X 알파 / 현대카드 M3 Edition2
+      product: 신한 직장IN플러스적금 / 메리츠 CMA+
     - name: 조욱진
       position: Marketer
       email: cho.ookjin@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
+      desc: 조욱진님은 H캐피탈의 페이스북 황태자 출신으로, 순해 보이는 외모와 달리 북마크에는 상남자 되는 법, 연애초보가 하는 실수 등 진정한 남자로 태어나기 위한 정보가 즐비합니다. 입사 2주 만에 레이니스트에 빛보다 빠른 속도로 적응했습니다.
+      card: 현대카드 M2 Edition2
+      product: 신한 직장IN플러스적금 / 마이홈플랜 주택청약종합저축
     - name: 권수진
       position: Marketer
       email: sujin@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
+      desc: 권수진님은 목소리가 큽니다. 밥 먹고 들어오는 길에 말하는 소리가 4층 사무실까지 들립니다. 하루에 약으로 카페라떼 5통을 먹어 치우며, 못 먹게 하면 금단현상 때문에 SNS 드립이 떠오르지 않는다며 목소리가 더 커집니다. 2016년 새해 소망으로 다이어트를 얘기했다가 대표님에게 카페라떼 중지령을 선포당했습니다.
+      card: 우리 가득한 / 롯데 국민행복 / KB 혜담
+      product: 우리 아가사랑 유후 적금 / 주택청약종합저축
     - name: 안성원
       position: Marketer
       email: sungwon@rainist.com
-      desc: ...
-      card: 뭔지 모르는 카드
-      product: 없음
+      desc: 안성원님은 수수깡입니다. 아무도 안 건드려도 엎어집니다. 맞은편 자리에서 갑자기 실종되는 경우도 있는데, 의자에 앉다가 엎어져서입니다. 레이니스트 공식 심신미약자로 뒷사람이 부르거나 어깨만 짚어도 놀라 자지러집니다. 참한 PR 담당자를 찾으려던 회사의 계획은 수포로 돌아간 듯합니다. 알파카를 닮았습니다.
+      card: 신한 Love / 신세계 씨티 리워드
+      product: 국민은행 Smart★폰 적금

@@ -25,37 +25,126 @@ title: 구성원
         </div>
     </section>
 
-    {% assign teams = site.data.team %}
-    {% for team_hash in teams %}
-    {% assign team = team_hash[1] %}
-        <section class="{{ team.title | slugify: 'pretty' }}">
-            <div class="container">
-                <h2 class="title">{{ team.title | upcase }}</h2>
-                <div class="row">
-                    <div class="col-md-2 col-xs-12"></div>
-                    <div class="col-md-10 col-xs-12 form-desc">{{ team.desc }}</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2 col-xs-12"></div>
-                    <div class="col-md-10 col-xs-12">
-                        <ul class="member-list">
-                            {% for member in team.people %}
-                            <li class="member-item">
-                                <div class="member-preview">
-                                    <img class="member-profile small" src="/assets/profile/{{ member.email }}_small.png" alt="{{ member.name }}"/>
-                                    <span class="member-name">
-                                        <span>{{ member.name }}<span/>
-                                        <b>{{ member.position }}</b>
-                                    </span>
-                                </div>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
+    {% assign team = site.data.team.ceo %}
+    <section class="{{ team.title | slugify: 'pretty' }}">
+        <div class="container">
+            <h2 class="title">{{ team.title | upcase }}</h2>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12 form-desc">{{ team.desc }}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12">
+                    <ul class="member-list">
+                        {% for member in team.people %}
+                        <li class="member-item">
+                            <a role="button" class="member-trigger"></a>
+                            <div class="member-preview">
+                                <img class="member-profile small" src="/assets/profile/{{ member.email }}_small.png" alt="{{ member.name }}"/>
+                                <img class="member-profile large" src="/assets/profile/{{ member.email }}_large.png" alt="{{ member.name }}"/>
+                                <span class="member-name">
+                                    <span>{{ member.name }}<span/>
+                                    <b>{{ member.position }}</b>
+                                </span>
+                            </div>
+                            <div class="member-desc">
+                                <p class="desc">
+                                    {{ member.desc }}
+                                </p>
+                                <p class="post_script">
+                                    보유 카드 : {{ member.card }}<br/>
+                                    보유 상품 : {{ member.product }}
+                                </p>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
-        </section>
-    {% endfor %}
+        </div>
+    </section>
+
+    {% assign team = site.data.team.dev %}
+    <section class="{{ team.title | slugify: 'pretty' }}">
+        <div class="container">
+            <h2 class="title">{{ team.title | upcase }}</h2>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12 form-desc">{{ team.desc }}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12">
+                    <ul class="member-list">
+                        {% for member in team.people %}
+                        <li class="member-item">
+                            <a role="button" class="member-trigger"></a>
+                            <div class="member-preview">
+                                <img class="member-profile small" src="/assets/profile/{{ member.email }}_small.png" alt="{{ member.name }}"/>
+                                <img class="member-profile large" src="/assets/profile/{{ member.email }}_large.png" alt="{{ member.name }}"/>
+                                <span class="member-name">
+                                    <span>{{ member.name }}<span/>
+                                    <b>{{ member.position }}</b>
+                                </span>
+                            </div>
+                            <div class="member-desc">
+                                <p class="desc">
+                                    {{ member.desc }}
+                                </p>
+                                <p class="post_script">
+                                    보유 카드 : {{ member.card }}<br/>
+                                    보유 상품 : {{ member.product }}
+                                </p>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% assign team = site.data.team.finance %}
+    <section class="{{ team.title | slugify: 'pretty' }}">
+        <div class="container">
+            <h2 class="title">{{ team.title | upcase }}</h2>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12 form-desc">{{ team.desc }}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-12"></div>
+                <div class="col-md-10 col-xs-12">
+                    <ul class="member-list">
+                        {% for member in team.people %}
+                        <li class="member-item">
+                            <a role="button" class="member-trigger"></a>
+                            <div class="member-preview">
+                                <img class="member-profile small" src="/assets/profile/{{ member.email }}_small.png" alt="{{ member.name }}"/>
+                                <img class="member-profile large" src="/assets/profile/{{ member.email }}_large.png" alt="{{ member.name }}"/>
+                                <span class="member-name">
+                                    <span>{{ member.name }}<span/>
+                                    <b>{{ member.position }}</b>
+                                </span>
+                            </div>
+                            <div class="member-desc">
+                                <p class="desc">
+                                    {{ member.desc }}
+                                </p>
+                                <p class="post_script">
+                                    보유 카드 : {{ member.card }}<br/>
+                                    보유 상품 : {{ member.product }}
+                                </p>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 
 <script>
