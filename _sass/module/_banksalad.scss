@@ -185,6 +185,10 @@ $module: 'banksalad';
     }
 }
 
+.banksalad__service__desc-wrap {
+    margin-top: 26px;
+}
+
 @media only screen and (max-width:769px){
     .banksalad__wrap {
         padding: 30px 0 0;
@@ -221,7 +225,6 @@ $module: 'banksalad';
         padding: 0;
     }
     .banksalad__service__desc-wrap {
-        margin-top: 26px;
         padding: 0;
     }
     .banksalad__service + .banksalad__service {
