@@ -19,7 +19,9 @@ with open('_data/press.csv', 'r') as f:
 
 data.reverse()
 
-number_of_total_pages = len(data) // ITEM_PER_PAGE + PAGE_OFFSET
+offset = PAGE_OFFSET if len(data) % ITEM_PER_PAGE > 0 else 0
+number_of_total_pages = len(data) // ITEM_PER_PAGE + offset
+
 for i in range(PAGE_OFFSET, number_of_total_pages + PAGE_OFFSET):
     outputs = [
         '---',
