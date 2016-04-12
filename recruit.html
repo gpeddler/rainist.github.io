@@ -344,6 +344,7 @@ title: 채용
     function onNoticeOpen(title, content) {
         $($('.popup')[0]).addClass("on");
         $($('.dim')[0]).addClass("on");
+        $('body').addClass("fixed");
 
         $($('.popup-title')[0]).html(title);
         $($('.content-md')[0]).html(content);
@@ -352,5 +353,6 @@ title: 채용
     function onNoticeClose() {
         $($('.popup')[0]).removeClass("on");
         $($('.dim')[0]).removeClass("on");
+        $('body').removeClass("fixed");
     }
 </script>
