@@ -37,7 +37,7 @@ title: 채용
 
           <div class="row">
               <ul class="job-list">
-                  <li class="job-item">
+                  <li id="job_software-engineer" class="job-item">
                       <a role="button" class="job-trigger"></a>
                       <h4 class="job-title">Software Engineer</h4>
                       <h5 class="job-subtitle">레이니스트의 엔지니어</h5>
@@ -117,7 +117,7 @@ title: 채용
                       </ul>
                   </li>
 
-                  <li class="job-item">
+                  <li id="job_designer" class="job-item">
                       <a role="button" class="job-trigger"></a>
                       <h4 class="job-title">UX.UI Designer</h4>
                       <h5 class="job-subtitle">레이니스트의 디자이너</h5>
@@ -182,7 +182,7 @@ title: 채용
                       </ul>
                   </li>
 
-                  <li class="job-item">
+                  <li id="job_marketer" class="job-item">
                       <a role="button" class="job-trigger"></a>
                       <h4 class="job-title">Marketer</h4>
                       <h5 class="job-subtitle">레이니스트의 마케터</h5>
@@ -235,7 +235,7 @@ title: 채용
                       </ul>
                   </li>
 
-                  <li class="job-item">
+                  <li id="job_business-developer" class="job-item">
                       <a role="button" class="job-trigger"></a>
                       <h4 class="job-title">Business Developer</h4>
                       <h5 class="job-subtitle">역할</h5>
@@ -376,6 +376,32 @@ title: 채용
             target.addClass("active");
         }
     });
+
+    var recruitType = getUrlParameter('type');
+    var recruitPreset = [
+      "software-engineer",
+      "designer",
+      "marketer",
+      "business-developer"
+    ];
+    if (recruitPreset.indexOf(recruitType) !== -1) {
+      $("#job_" + recruitType).addClass("active");
+    }
+
+    function getUrlParameter(sParam) {
+      var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+          sURLVariables = sPageURL.split('&'),
+          sParameterName,
+          i;
+
+      for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+      }
+    };
 
     function onNoticeOpen(title, content) {
         $($('.popup')[0]).addClass("on");
